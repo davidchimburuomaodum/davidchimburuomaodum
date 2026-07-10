@@ -33,7 +33,7 @@ I am a passionate **Cybersecurity Analyst** based in Port Harcourt, Nigeria. My 
 
 | Project Name | Description | Repository |
 | :--- | :--- | :---: |
-| 🔍 **OSINT Investigation** | Conducted an open-source intelligence investigation on a target system to map its digital footprint. | *https://github.com/davidchimburuomaodum/OSINT-Investigation.git* |
+| 🔍 **OSINT Investigation** | Conducted an open-source intelligence investigation on a target system to map its digital footprint. | *Coming Soon* |
 | 🪵 **Log Analysis Lab** | Analyzed IIS and Windows Event logs to trace, identify, and map active cyber attacks. | *Coming Soon* |
 | 🦠 **Malware Analysis** | Performed static and dynamic analysis on a malicious file to safely identify its behavior. | *Coming Soon* |
 | 🕵️‍♂️ **Digital Forensics** | Conducted a deep-dive forensic investigation on a compromised Windows system. | *Coming Soon* |
