@@ -1,7 +1,14 @@
 # Hi there, I'm David Chimburuoma Odum! 👋
 
 ## 🛡️ About Me
-I am a passionate **Cybersecurity Analyst** based in Port Harcourt, Nigeria. My expertise spans both **Offensive** and **Defensive Security** (Purple Teaming). I thrive on building practical security projects that demonstrate real-world skills, aiming to make the digital space safer one investigation at a time.
+
+I am a dedicated **Security Professional** and **Criminologist** with a strong passion for safeguarding people, organizations, and digital environments. My background in **Criminology and Security Studies**, combined with my knowledge of **Cybersecurity**, enables me to approach modern security challenges from both physical and digital perspectives.
+
+My interests include **crime prevention, security operations, risk assessment, cybercrime protection, threat analysis, and information security**. I am committed to applying ethical practices, critical thinking, and practical security solutions to help create safer communities and more resilient organizations.
+
+I believe that effective security is achieved through integrity, vigilance, continuous learning, and the responsible use of technology. As I continue to grow professionally, my goal is to contribute to the advancement of physical security and cybersecurity while making a meaningful impact in the security industry.
+
+> *"Protecting people, securing systems, and preventing threats through knowledge, integrity, and innovation."*
 
 - 🔭 I’m currently building out my security home lab and documenting my findings.
 - 💬 Ask me about: **Penetration Testing, Log Analysis, and Threat Hunting**.
@@ -63,4 +70,4 @@ Let's collaborate, discuss threat intelligence, or just talk shop about security
 - 💬 **WhatsApp:** [+234 912 574 7577](https://wa.me/2349125747577) / [+234 812 520 8462](https://wa.me/2348125208462)
 
 ---
-⚡ *“The quieter you become, the more you are able to hear.”*
+🔒 *Driven by integrity. Committed to security. Focused on protecting what matters most.*
