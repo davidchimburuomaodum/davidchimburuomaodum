@@ -1,10 +1,18 @@
-# 👋 Glad You're Here
+<div align="center">
 
-### Explore My Professional Portfolio
+# 👨🏾‍💼 David Chimburuoma Odum
 
-*Showcasing my journey in Security, Criminology, and Cybersecurity.*
+### 🛡️ Security Professional
+### 🎓 Criminologist
+### 🔐 Cybersecurity Analyst
 
-# Hi there, I'm David Chimburuoma Odum! 👋
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&size=25&duration=3000&pause=1000&color=0E75B6&center=true&vCenter=true&width=750&lines=Welcome+to+My+Professional+Portfolio;Protecting+People+%26+Organizations;Crime+Prevention+%7C+Risk+Management;Cybercrime+Protection;Always+Learning+Always+Improving" alt="Typing SVG"/>
+
+*"Integrity • Professionalism • Security Excellence"*
+
+</div>
+
+---
 
 ## 🛡️ About Me
 
