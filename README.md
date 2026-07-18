@@ -21,7 +21,7 @@ I am a dedicated **Security Professional** and **Criminologist** with a strong p
 > *"Protecting people, securing systems, and preventing threats through knowledge, integrity, and innovation."*
 
 - 🔭 I’m currently building out my security home lab and documenting my findings.
-- 💬 Ask me about: **Penetration Testing, Log Analysis, and Threat Hunting**.
+- 💬 Ask me about:💬 Ask me about: **Security Operations, Cybersecurity, Risk Assessment, Crime Prevention, and Cybercrime Protection**
 - 🚀 Fun fact: I bridge the gap between technical security and human behavior with my background in Criminology.
 
 ---
