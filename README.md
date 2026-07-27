@@ -33,7 +33,7 @@ I am a dedicated **Security Professional** and **Criminologist** with a strong p
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 
 ### 🌐 Networking
-`TCP/IP` • `DNS` • `HTTP/S` • `FTP` • `SSH` • `Telnet`
+TCP/IP • DNS • HTTP/S • FTP • SSH • RDP
 
 ### 🧰 Cybersecurity Tools
 ![Nmap](https://img.shields.io/badge/Nmap-004088?style=flat-square&logo=nmap&logoColor=white)
