@@ -53,7 +53,7 @@ I am a dedicated **Security Professional** and **Criminologist** with a strong p
 | 🔍 **OSINT Investigation** | Conducted an open-source intelligence investigation on a target system to map its digital footprint. | *https://github.com/davidchimburuomaodum/Enterprise-Threat-Intelligence-Assessment.git* |
 | 🪵 **Log Analysis Lab** | Analyzed IIS and Windows Event logs to trace, identify, and map active cyber attacks. | *Coming Soon* |
 | 🦠 **Malware Analysis** | Performed static and dynamic analysis on a malicious file to safely identify its behavior. | *Coming Soon* |
-| 🕵️‍♂️ **Digital Forensics** | Conducted a deep-dive forensic investigation on a compromised Windows system. | *Coming Soon* |
+| 🕵️‍♂️ **Digital Forensics** | Conducted a deep-dive forensic investigation on a compromised USB Drive. |*https://github.com/davidchimburuomaodum/digital-forensic-usb-examination.git* |
 | 🎯 **Vulnerability Assessment** | Executed automated and manual vulnerability scans on a target network infrastructure. | *Coming Soon* |
 | 🏹 **Threat Hunting** | Proactively searched through network environments to detect sophisticated, hidden malicious activities. | *Coming Soon* |
 | ⚡ **Penetration Testing** | Simulated a full-scale cyberattack on a target network to identify exploitable weaknesses. | *Coming Soon* |
