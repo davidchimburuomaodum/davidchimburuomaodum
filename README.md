@@ -62,7 +62,7 @@ I am a dedicated **Security Professional** and **Criminologist** with a strong p
 | 🦠 **Malware Analysis** | Performed static and dynamic analysis on a malicious file to safely identify its behavior. | *Coming Soon* |
 | 🕵️‍♂️ **Digital Forensics** | Conducted a deep-dive forensic investigation on a compromised USB Drive. |*https://github.com/davidchimburuomaodum/digital-forensic-usb-examination.git* |
 | 🎯 **Vulnerability Assessment** | Executed automated and manual vulnerability scans on a target network infrastructure. | *Coming Soon* |
-| | 🔐 **Cryptography** | Implemented cryptographic techniques including encryption, hashing, digital signatures, and secure key management to ensure data confidentiality, integrity, authentication, and secure communication. | *Coming Soon* |
+| 🔐 **Cryptography** | Applied cryptographic techniques including encryption, hashing, digital signatures, and secure key management to protect data confidentiality, integrity, and authenticity. | *Coming Soon* |
 | ⚡ **Penetration Testing** | Simulated a full-scale cyber attack on a target network to identify exploitable weaknesses. | *Coming Soon* |
 
 ---
