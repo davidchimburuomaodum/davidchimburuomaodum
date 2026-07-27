@@ -26,7 +26,7 @@ I am a dedicated **Security Professional** and **Criminologist** with a strong p
 
 ---
 
-## 🛠️ Skills & Toolbelt
+## 🛠️ Technical Skills
 
 ### 💻 Operating Systems
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=windows&logoColor=white) 
@@ -62,8 +62,8 @@ I am a dedicated **Security Professional** and **Criminologist** with a strong p
 | 🦠 **Malware Analysis** | Performed static and dynamic analysis on a malicious file to safely identify its behavior. | *Coming Soon* |
 | 🕵️‍♂️ **Digital Forensics** | Conducted a deep-dive forensic investigation on a compromised USB Drive. |*https://github.com/davidchimburuomaodum/digital-forensic-usb-examination.git* |
 | 🎯 **Vulnerability Assessment** | Executed automated and manual vulnerability scans on a target network infrastructure. | *Coming Soon* |
-| 🏹 **Threat Hunting** | Proactively searched through network environments to detect sophisticated, hidden malicious activities. | *Coming Soon* |
-| ⚡ **Penetration Testing** | Simulated a full-scale cyberattack on a target network to identify exploitable weaknesses. | *Coming Soon* |
+| | 🔐 **Cryptography** | Implemented cryptographic techniques including encryption, hashing, digital signatures, and secure key management to ensure data confidentiality, integrity, authentication, and secure communication. | *Coming Soon* |
+| ⚡ **Penetration Testing** | Simulated a full-scale cyber attack on a target network to identify exploitable weaknesses. | *Coming Soon* |
 
 ---
 
