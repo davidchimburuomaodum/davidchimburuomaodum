@@ -33,7 +33,14 @@ I am a dedicated **Security Professional** and **Criminologist** with a strong p
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 
 ### 🌐 Networking
-TCP/IP • DNS • HTTP/S • FTP • SSH • RDP
+
+![TCP/IP](https://img.shields.io/badge/TCP%2FIP-00599C?style=for-the-badge)
+![DNS](https://img.shields.io/badge/DNS-0066CC?style=for-the-badge)
+![HTTP/S](https://img.shields.io/badge/HTTP%2FS-FF6C37?style=for-the-badge)
+![FTP](https://img.shields.io/badge/FTP-2E8B57?style=for-the-badge)
+![SSH](https://img.shields.io/badge/SSH-000000?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![Telnet](https://img.shields.io/badge/Telnet-808080?style=for-the-badge)
+![RDP](https://img.shields.io/badge/RDP-0078D4?style=for-the-badge&logo=windows&logoColor=white)
 
 ### 🧰 Cybersecurity Tools
 ![Nmap](https://img.shields.io/badge/Nmap-004088?style=flat-square&logo=nmap&logoColor=white)
