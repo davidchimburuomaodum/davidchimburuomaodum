@@ -40,7 +40,6 @@ I am a dedicated **Security Professional** and **Criminologist** with a strong p
 ![FTP](https://img.shields.io/badge/FTP-2E8B57?style=for-the-badge)
 ![SSH](https://img.shields.io/badge/SSH-000000?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![Telnet](https://img.shields.io/badge/Telnet-808080?style=for-the-badge)
-![RDP](https://img.shields.io/badge/RDP-0078D4?style=for-the-badge&logo=windows&logoColor=white)
 
 ### 🧰 Cybersecurity Tools
 ![Nmap](https://img.shields.io/badge/Nmap-004088?style=flat-square&logo=nmap&logoColor=white)
@@ -63,7 +62,7 @@ I am a dedicated **Security Professional** and **Criminologist** with a strong p
 | 🕵️‍♂️ **Digital Forensics** | Conducted a deep-dive forensic investigation on a compromised USB Drive. |*https://github.com/davidchimburuomaodum/digital-forensic-usb-examination.git* |
 | 🎯 **Vulnerability Assessment** | Executed automated and manual vulnerability scans on a target network infrastructure. | *Coming Soon* |
 | 🔐 **Cryptography** | Applied cryptographic techniques including encryption, hashing, digital signatures, and secure key management to protect data confidentiality, integrity, and authenticity. | *Coming Soon* |
-| ⚡ **Penetration Testing** | Simulated a full-scale cyber attack on a target network to identify exploitable weaknesses. | *Coming Soon* |
+| ⚡ **Penetration Testing** | Simulated a full-scale cyber attack on a target network to identify exploitable weaknesses. | *https://github.com/davidchimburuomaodum/Penetration-Testing-Report.git* |
 
 ---
 
