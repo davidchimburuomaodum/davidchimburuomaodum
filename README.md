@@ -1,68 +1,127 @@
-<div align="center">
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=250&section=header&text=David%20Chimburuoma%20Odum&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=Cybersecurity%20Analyst%20%7C%20Malware%20Analyst%20%7C%20Digital%20Forensics%20Specialist&descAlignY=60" />
+</p>
 
-# 👨🏾‍💼 David Chimburuoma Odum
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3500&pause=1000&color=00C8FF&center=true&vCenter=true&width=800&lines=Cybersecurity+Analyst;Malware+Analyst;Digital+Forensics+Specialist;Always+Learning+and+Growing" />
+</p>
 
-### 🛡️ Security Professional
-### 🎓 Criminologist
-### 🔐 Cybersecurity Analyst
-
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&size=25&duration=3000&pause=1000&color=0E75B6&center=true&vCenter=true&width=750&lines=Welcome+to+My+Professional+Portfolio;Protecting+People+%26+Organizations;Crime+Prevention+%7C+Risk+Management;Cybercrime+Protection;Always+Learning+Always+Improving" alt="Typing SVG"/>
-
-*"Integrity • Professionalism • Security Excellence"*
-
-</div>
+> *"Protecting systems, investigating cyber threats, and advancing digital security through intelligence, integrity, and innovation."*
 
 ---
 
-## 🛡️ About Me
+## About Me
 
-I am a dedicated **Security Professional** and **Criminologist** with a strong passion for safeguarding people, organizations, and digital environments. My background in **Criminology and Security Studies**, combined with my knowledge of **Cybersecurity**, enables me to approach modern security challenges from both physical and digital perspectives.
+I am a **Cybersecurity Analyst** specializing in **Malware Analysis** and **Digital Forensics**, with a degree in **Criminology and Security Studies**.
 
-> *"Protecting people, securing systems, and preventing threats through knowledge, integrity, and innovation."*
+My background combines technical cybersecurity expertise with criminological knowledge, enabling me to investigate cyber incidents, analyze malicious software, conduct forensic investigations, and understand the behavioral aspects of cybercrime.
 
-- 🔭 I’m currently building out my security home lab and documenting my findings.
-- 💬 Ask me about: Security Operations, Cybersecurity, Risk Assessment, Crime Prevention, and Cybercrime Protection**
-- 🚀 Fun fact: I bridge the gap between technical security and human behavior with my background in Criminology.
+I am passionate about protecting digital environments, uncovering cyber threats, and continuously improving my technical skills through research, hands-on labs, and real-world security challenges.
 
 ---
 
-## 🛠️ Technical Skills
+##  My Focus
 
-### 💻 Operating Systems
-![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=windows&logoColor=white) 
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-
-### 🌐 Networking
-
-![TCP/IP](https://img.shields.io/badge/TCP%2FIP-00599C?style=for-the-badge)
-![DNS](https://img.shields.io/badge/DNS-0066CC?style=for-the-badge)
-![HTTP/S](https://img.shields.io/badge/HTTP%2FS-FF6C37?style=for-the-badge)
-![FTP](https://img.shields.io/badge/FTP-2E8B57?style=for-the-badge)
-![SSH](https://img.shields.io/badge/SSH-000000?style=for-the-badge&logo=gnu-bash&logoColor=white)
-![Telnet](https://img.shields.io/badge/Telnet-808080?style=for-the-badge)
-
-### 🧰 Cybersecurity Tools
-![Nmap](https://img.shields.io/badge/Nmap-004088?style=flat-square&logo=nmap&logoColor=white)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
-![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6600?style=flat-square&logo=burpsuite&logoColor=white)
-![Metasploit](https://img.shields.io/badge/Metasploit-4C5E70?style=flat-square&logo=metasploit&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+-   Malware Analysis
+-   Digital Forensics
+-   Threat Detection & Incident Response
+-   Cyber Threat Intelligence
+-   Security Operations (SOC)
+-   Building and documenting my Cybersecurity Home Lab
+-   Continuous learning in offensive and defensive cybersecurity
 
 ---
 
-## 📂 Projects
-> 💡 *Note: I am currently finalizing the documentation and codebases for these labs. Stay tuned for updates!*
+##  Ask Me About
 
+- Malware Analysis
+- Digital Forensics
+- Cybersecurity
+- Incident Response
+- Threat Hunting
+- Threat Intelligence
+- Security Operations (SOC)
+- Cybercrime Investigation
+- Cyber Awareness
+
+---
+
+## Technical Skills
+
+- Malware Analysis
+- Digital Forensics
+- Incident Response
+- Threat Hunting
+- Security Operations (SOC)
+- Windows Security
+- Linux Security
+- Network Security
+- Cyber Threat Intelligence
+- Digital Evidence Analysis
+- OSINT
+- Security Monitoring
+
+---
+
+##  Professional Goal
+
+To leverage my expertise in cybersecurity, malware analysis, and digital forensics to help organizations detect, investigate, and respond to cyber threats while continuously advancing my knowledge and contributing to a more secure digital world.
+
+---
+
+> **"Investigating cyber threats, uncovering digital evidence, and strengthening cyber resilience through technical excellence, analytical thinking, and integrity."**
+---
+
+## Technical Proficiencies
+
+**Operating Systems**
+- Windows
+- Linux
+
+**Networking**
+- TCP/IP
+- HTTP
+- HTTPS
+- DNS
+- SSH
+- FTP
+- Telnet
+
+**Cybersecurity Tools**
+- Wireshark
+- Nmap
+- Metasploit
+- Autopsy
+- FTK Imager
+- Ghidra
+- IDA Free
+
+**Programming & Scripting**
+- Python
+- Bash
+- PowerShell
+
+**Virtualization**
+- VMware
+- VirtualBox
+
+**Version Control**
+- Git
+- GitHub
+
+---
+
+##  Projects
+>   *Note: I am currently finalizing the documentation and codebases for these labs. Stay tuned for updates!*
 | Project Name | Description | Repository |
-| :--- | :--- | :---: |
-| 🔍 **OSINT Investigation** | Conducted an open-source intelligence investigation on a target system to map its digital footprint. | *https://github.com/davidchimburuomaodum/Enterprise-Threat-Intelligence-Assessment.git* |
-| 🪵 **Log Analysis Lab** | Analyzed IIS and Windows Event logs to trace, identify, and map active cyber attacks. | *https://github.com/davidchimburuomaodum/Log-Analysis.git* |
-| 🦠 **Malware Analysis** | Performed static and dynamic analysis on a malicious file to safely identify its behavior. | *https://github.com/davidchimburuomaodum/enterprise-malware-analysis-bank-pdf.git* |
-| 🕵️‍♂️ **Digital Forensics** | Conducted a deep-dive forensic investigation on a compromised USB Drive. |*https://github.com/davidchimburuomaodum/digital-forensic-usb-examination.git* |
-| 🎯 **Vulnerability Assessment** | Executed a vulnerability scans on a target network infrastructure. | *https://github.com/davidchimburuomaodum/Vulnerability-Assessment-Project.git* |
-| 🔐 **Cryptography** | Applied cryptographic techniques including encryption, hashing, digital signatures, and secure key management to protect data confidentiality, integrity, and authenticity. | *Coming Soon* |
-| ⚡ **Penetration Testing** | Simulated a full-scale cyber attack on a target network to identify exploitable weaknesses. | *https://github.com/davidchimburuomaodum/Penetration-Testing-Report.git* |
+| :--- | :--- | :---: 
+|   **OSINT Investigation** | Performed an open-source intelligence investigation on a target system to map its digital footprint. | *https://github.com/davidchimburuomaodum/Enterprise-Threat-Intelligence-Assessment.git* |
+|   **Log Analysis Lab** | Analyzed IIS and Windows Event logs to trace, identify, and map active cyber attacks. | *https://github.com/davidchimburuomaodum/Log-Analysis.git* |
+|   **Malware Analysis** | Performed static and dynamic analysis on a malicious file to safely identify its behavior. | *https://github.com/davidchimburuomaodum/enterprise-malware-analysis-bank-pdf.git* |
+|   **Digital Forensics** | Conducted a deep-dive forensic investigation on a compromised USB Drive. |*https://github.com/davidchimburuomaodum/digital-forensic-usb-examination.git* |
+|   **Vulnerability Assessment** | Executed a vulnerability scans on a target network infrastructure. | *https://github.com/davidchimburuomaodum/Vulnerability-Assessment-Project.git* |
+|   **Cryptography** | Applied cryptographic techniques including encryption, hashing, digital signatures, and secure key management to protect data confidentiality, integrity, and authenticity. | *Coming Soon* |
+|   **Penetration Testing** | Simulated a full-scale cyber attack on a target network to identify exploitable weaknesses. | *https://github.com/davidchimburuomaodum/Penetration-Testing-Report.git* |
 
 ---
 
