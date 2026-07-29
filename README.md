@@ -66,16 +66,41 @@ I am a dedicated **Security Professional** and **Criminologist** with a strong p
 
 ---
 
-## 🎓 Education & Certifications
+## Certifications
 
-### Certifications
-* **CCSC** – Cybersecurity Career Starter Certification
-* **Threat Intelligence Certification**
+<table>
+<tr>
+<td align="center">
+<img src="certifications/IMG_20260729_170728_051.png" width="500"><br>
+<b>Threat Intelligence Certification</b>
+</td>
+</tr>
 
-### Education
-* **NIIT Port Harcourt** – Cybersecurity Program
-* **Miva Open University** – B.Sc. Criminology and Security Studies
+<tr>
+<td align="center">
+<img src="certifications/IMG_20260729_170758_754.png" width="500"><br>
+<b>CCSC – Cybersecurity Career Starter Certification</b>
+</td>
+</tr>
+</table>
 
+## Education
+
+<table>
+<tr>
+<td align="center">
+<img src="logos/IMG_20260720_180647_482.png" width="120"><br>
+<b>NIIT Port Harcourt</b><br>
+Cybersecurity Program
+</td>
+
+<td align="center">
+<img src="logos/Miva_Open_University.jpg" width="120"><br>
+<b>Miva Open University</b><br>
+B.Sc. Criminology and Security Studies
+</td>
+</tr>
+</table>
 ---
 
 ## 🤝 Connect With Me
