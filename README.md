@@ -111,17 +111,18 @@ To leverage my expertise in cybersecurity, malware analysis, and digital forensi
 
 ---
 
-##  Projects
->   *Note: I am currently finalizing the documentation and codebases for these labs. Stay tuned for updates!*
-| Project Name | Description | Repository |
-| :--- | :--- | :---: 
-|   **OSINT Investigation** | Performed an open-source intelligence investigation on a target system to map its digital footprint. | *https://github.com/davidchimburuomaodum/Enterprise-Threat-Intelligence-Assessment.git* |
-|   **Log Analysis Lab** | Analyzed IIS and Windows Event logs to trace, identify, and map active cyber attacks. | *https://github.com/davidchimburuomaodum/Log-Analysis.git* |
-|   **Malware Analysis** | Performed static and dynamic analysis on a malicious file to safely identify its behavior. | *https://github.com/davidchimburuomaodum/enterprise-malware-analysis-bank-pdf.git* |
-|   **Digital Forensics** | Conducted a deep-dive forensic investigation on a compromised USB Drive. |*https://github.com/davidchimburuomaodum/digital-forensic-usb-examination.git* |
-|   **Vulnerability Assessment** | Executed a vulnerability scans on a target network infrastructure. | *https://github.com/davidchimburuomaodum/Vulnerability-Assessment-Project.git* |
-|   **Cryptography** | Applied cryptographic techniques including encryption, hashing, digital signatures, and secure key management to protect data confidentiality, integrity, and authenticity. | *Coming Soon* |
-|   **Penetration Testing** | Simulated a full-scale cyber attack on a target network to identify exploitable weaknesses. | *https://github.com/davidchimburuomaodum/Penetration-Testing-Report.git* |
+## Projects
+
+| Project | Description | Repository |
+|----------|-------------|------------|
+| OSINT Investigation | Conducted an open-source intelligence (OSINT) investigation to collect, analyze, and correlate publicly available information for digital footprint analysis. | https://github.com/davidchimburuomaodum/Enterprise-Threat-Intelligence-Assessment |
+| Log Analysis Lab | Analyzed IDS alerts and Windows Event Logs to identify, investigate, and map cyber attack activity using security monitoring techniques. | https://github.com/davidchimburuomaodum/Log-Analysis |
+| Malware Analysis | Performed static and dynamic malware analysis to identify malicious behavior, indicators of compromise (IOCs), and potential threats. | https://github.com/davidchimburuomaodum/enterprise-malware-analysis-bank-pdf |
+| Digital Forensics | Conducted a forensic investigation of a compromised USB drive, including evidence acquisition, file recovery, timeline analysis, and reporting. | https://github.com/davidchimburuomaodum/digital-forensic-usb-examination |
+| Vulnerability Assessment | Performed vulnerability scanning and security assessment of a target environment, identifying risks and recommending remediation measures. | https://github.com/davidchimburuomaodum/Vulnerability-Assessment-Project |
+| SIEM | Monitored, analyzed, and investigated security events using Security Information and Event Management (SIEM) solutions to detect threats, correlate logs, and support incident response. | Coming Soon |
+| Cryptography | Applied encryption, hashing, digital signatures, and key management techniques to ensure data confidentiality, integrity, and authenticity. | Coming Soon |
+| Penetration Testing | Simulated a penetration test to identify security vulnerabilities, assess risks, and provide remediation recommendations. | https://github.com/davidchimburuomaodum/Penetration-Testing-Report |
 
 ---
 
