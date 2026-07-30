@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3500&pause=1000&color=00C8FF&center=true&vCenter=true&width=800&lines=Cybersecurity+Analyst;Malware+Analyst;Digital+Forensics+Specialist;Always+Learning+and+Growing" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3500&pause=1000&color=00C8FF&center=true&vCenter=true&width=800&lines=Welcome+to+my+profile!;Cybersecurity+Analyst;Malware+Analyst;Digital+Forensics+Specialist" />
 </p>
 
 > *"Protecting systems, investigating cyber threats, and advancing digital security through intelligence, integrity, and innovation."*
