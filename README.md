@@ -128,42 +128,46 @@ To leverage my expertise in cybersecurity, malware analysis, and digital forensi
 
 ## Certifications
 
-<table>
+<table align="center" border="1">
 <tr>
-<td align="center">
-<img src="certifications/IMG_20260729_170728_051.png" width="500"><br>
-<b>Threat Intelligence Certification</b>
-</td>
-</tr>
 
-<tr>
-<td align="center">
-<img src="certifications/IMG_20260729_170758_754.png" width="500"><br>
+<td align="center" width="50%">
+<img src="certifications/IMG_20260729_170728_051.png" width="150"><br><br>
+<b>Threat Intelligence Analyst</b>
+</td>
+
+<td align="center" width="50%">
+<img src="certifications/IMG_20260729_170758_754.png" width="150"><br><br>
 <b>CCSC – Cybersecurity Career Starter Certification</b>
 </td>
+
 </tr>
 </table>
 
+---
+
 ## Education
 
-<table>
+<table align="center" border="1">
 <tr>
-<td align="center">
-<img src="logos/IMG_20260720_180647_482.png" width="120"><br>
+
+<td align="center" width="50%">
+<img src="logos/IMG_20260720_180647_482.png" width="90"><br><br>
 <b>NIIT Port Harcourt</b><br>
 Cybersecurity Program
 </td>
 
-<td align="center">
-<img src="logos/Miva_Open_University.jpg" width="120"><br>
+<td align="center" width="50%">
+<img src="logos/Miva_Open_University.jpg" width="90"><br><br>
 <b>Miva Open University</b><br>
 B.Sc. Criminology and Security Studies
 </td>
+
 </tr>
 </table>
----
 
-## 🤝 Connect With Me
+
+## Connect With Me
 
 Let's collaborate, discuss threat intelligence, or just talk shop about security!
 
