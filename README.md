@@ -124,6 +124,7 @@ To leverage my expertise in cybersecurity, malware analysis, and digital forensi
 | Cryptography | Applied encryption, hashing, digital signatures, and key management techniques to ensure data confidentiality, integrity, and authenticity. | Coming Soon |
 | Penetration Testing | Simulated a penetration test to identify security vulnerabilities, assess risks, and provide remediation recommendations. | https://github.com/davidchimburuomaodum/Penetration-Testing-Report |
 | Digital Forensics CTF Case | Conducted a complete digital forensic examination of the `cartel.img` forensic image, including evidence integrity verification, file system analysis, deleted file recovery, artifact analysis, and timeline reconstruction. | https://github.com/davidchimburuomaodum/Digital-Forensics-CTF-Case..git |
+| Firewall Engineering | Designed, configured, and managed firewall security policies to control network traffic, enforce access control, monitor threats, and strengthen network security through rule management and traffic filtering. | Coming Soon |
 ---
 
 ## Certifications
