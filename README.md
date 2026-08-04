@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=250&section=header&text=David%20Chimburuoma%20Odum&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=Cybersecurity%20Analyst%20%7C%20Malware%20Analyst%20%7C%20Digital%20Forensics%20Specialist&descAlignY=60" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=250&section=header&text=David%20Chimburuoma%20Odum&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=Cybersecurity%20Analyst%20%7C%20Malware%20Analysis%20%7C%20Digital%20Forensics%20&descAlignY=60" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3500&pause=1000&color=00C8FF&center=true&vCenter=true&width=800&lines=Welcome+to+my+profile!;Cybersecurity+Analyst;Malware+Analyst;Digital+Forensics+Specialist" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3500&pause=1000&color=00C8FF&center=true&vCenter=true&width=900&lines=Welcome+to+my+profile!;Cybersecurity+Analyst;Specializing+in+Malware+Analysis+and+Digital+Forensics" />
 </p>
 
 > *"Protecting systems, investigating cyber threats, and advancing digital security through intelligence, integrity, and innovation."*
