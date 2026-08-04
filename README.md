@@ -123,7 +123,7 @@ To leverage my expertise in cybersecurity, malware analysis, and digital forensi
 | SIEM | Monitored, analyzed, and investigated security events using Security Information and Event Management (SIEM) solutions to detect threats, correlate logs, and support incident response. | Coming Soon |
 | Cryptography | Applied encryption, hashing, digital signatures, and key management techniques to ensure data confidentiality, integrity, and authenticity. | Coming Soon |
 | Penetration Testing | Simulated a penetration test to identify security vulnerabilities, assess risks, and provide remediation recommendations. | https://github.com/davidchimburuomaodum/Penetration-Testing-Report |
-
+| Digital Forensics CTF Case | Conducted a complete digital forensic examination of the `cartel.img` forensic image, including evidence integrity verification, file system analysis, deleted file recovery, artifact analysis, and timeline reconstruction. | https://github.com/yourusername/Digital-Forensics-CTF-Case |
 ---
 
 ## Certifications
