@@ -1,106 +1,958 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="google-site-verification" content="sWwOeNicUUC96pjhV7wr7_TMijOzLxPR-y1oJTFDIao" />
+  <!-- Google Search Console Verification -->
+  <meta name="google-site-verification"
+        content="sWwOeNicUUC96pjhV7wr7_TMijOzLxPR-y1oJTFDIao">
 
-  <title>David Chimburuoma Odum | Security Professional & Cybersecurity Analyst</title>
+  <!-- SEO -->
+  <title>David Chimburuoma Odum | Cybersecurity Analyst</title>
 
-  <meta name="description" content="Official website of David Chimburuoma Odum, a Security Professional and Cybersecurity Analyst focused on cybersecurity, threat intelligence, OSINT, security research and digital security.">
+  <meta name="description"
+        content="Official portfolio of David Chimburuoma Odum, a Security Professional and Cybersecurity Analyst focused on Malware Analysis, Digital Forensics, Security Operations, OSINT, and Network Security.">
 
   <meta name="author" content="David Chimburuoma Odum">
 
+  <meta name="keywords"
+        content="David Chimburuoma Odum, Cybersecurity Analyst, Security Professional, Malware Analysis, Digital Forensics, OSINT, Network Security">
+
+  <meta name="robots" content="index, follow">
+
   <link rel="canonical" href="https://davidchimburuomaodum.github.io/">
+
+  <!-- Open Graph -->
+  <meta property="og:title"
+        content="David Chimburuoma Odum | Cybersecurity Analyst">
+
+  <meta property="og:description"
+        content="Security Professional and Cybersecurity Analyst focused on Malware Analysis, Digital Forensics, and practical cybersecurity.">
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:url"
+        content="https://davidchimburuomaodum.github.io/">
+
+  <!-- Favicon -->
+  <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+  <style>
+
+    :root {
+      --background: #070b12;
+      --background-light: #0d131d;
+      --card: #101722;
+      --card-hover: #151e2b;
+      --border: #202b3a;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-dark: #0284c7;
+      --success: #22c55e;
+      --max-width: 1150px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: auto;
+    }
+
+    /* =========================
+       NAVIGATION
+    ========================== */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(7, 11, 18, 0.88);
+      backdrop-filter: blur(15px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-container {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: -0.5px;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: rgba(56, 189, 248, 0.08);
+      filter: blur(100px);
+      border-radius: 50%;
+      top: 10%;
+      right: -150px;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .terminal-label {
+      font-family: "JetBrains Mono", monospace;
+      color: var(--accent);
+      font-size: 0.9rem;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 7vw, 5rem);
+      line-height: 1.05;
+      letter-spacing: -3px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: var(--accent);
+    }
+
+    .hero h2 {
+      font-size: clamp(1.2rem, 3vw, 1.7rem);
+      color: #cbd5e1;
+      font-weight: 500;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin-bottom: 35px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 22px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #031018;
+    }
+
+    .btn-primary:hover {
+      background: #7dd3fc;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: var(--card);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    /* =========================
+       SECTIONS
+    ========================== */
+
+    section {
+      padding: 100px 0;
+    }
+
+    .section-heading {
+      margin-bottom: 45px;
+    }
+
+    .section-heading small {
+      color: var(--accent);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.8rem;
+    }
+
+    .section-heading h2 {
+      font-size: 2.2rem;
+      margin-top: 8px;
+      letter-spacing: -1px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      max-width: 700px;
+      margin-top: 10px;
+    }
+
+    /* =========================
+       ABOUT
+    ========================== */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 50px;
+      align-items: start;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .profile-card {
+      background: linear-gradient(
+        145deg,
+        var(--card),
+        #0b111a
+      );
+      border: 1px solid var(--border);
+      padding: 30px;
+      border-radius: 15px;
+    }
+
+    .profile-card h3 {
+      margin-bottom: 20px;
+    }
+
+    .profile-item {
+      padding: 15px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .profile-item:last-child {
+      border-bottom: none;
+    }
+
+    .profile-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.8rem;
+      margin-bottom: 4px;
+    }
+
+    /* =========================
+       SKILLS
+    ========================== */
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .skill-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px;
+      transition: 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+      background: var(--card-hover);
+      border-color: #334155;
+    }
+
+    .skill-icon {
+      font-size: 1.7rem;
+      margin-bottom: 15px;
+    }
+
+    .skill-card h3 {
+      margin-bottom: 8px;
+    }
+
+    .skill-card p {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* =========================
+       PROJECTS
+    ========================== */
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .project-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 30px;
+      border-radius: 14px;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent);
+    }
+
+    .project-number {
+      font-family: "JetBrains Mono", monospace;
+      color: var(--accent);
+      font-size: 0.8rem;
+      margin-bottom: 15px;
+    }
+
+    .project-card h3 {
+      margin-bottom: 12px;
+    }
+
+    .project-card p {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* =========================
+       LAB
+    ========================== */
+
+    .lab {
+      background: var(--background-light);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .lab-box {
+      border: 1px solid var(--border);
+      background: var(--card);
+      padding: 45px;
+      border-radius: 16px;
+      text-align: center;
+    }
+
+    .lab-box h2 {
+      margin-bottom: 15px;
+    }
+
+    .lab-box p {
+      color: var(--muted);
+      max-width: 750px;
+      margin: auto;
+    }
+
+    /* =========================
+       OBJECTIVE
+    ========================== */
+
+    .objective {
+      text-align: center;
+    }
+
+    .objective-content {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .objective-content p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    /* =========================
+       CONTACT
+    ========================== */
+
+    .contact-box {
+      background: linear-gradient(
+        145deg,
+        #0d1722,
+        #101722
+      );
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 55px;
+      text-align: center;
+    }
+
+    .contact-box h2 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .contact-box p {
+      color: var(--muted);
+      max-width: 650px;
+      margin: 0 auto 25px;
+    }
+
+    .email {
+      display: inline-block;
+      color: var(--accent);
+      font-family: "JetBrains Mono", monospace;
+      margin-bottom: 25px;
+      word-break: break-word;
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 30px 0;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+    @media (max-width: 800px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        min-height: 80vh;
+      }
+
+      .hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .about-grid,
+      .skills-grid,
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 75px 0;
+      }
+
+      .contact-box,
+      .lab-box {
+        padding: 30px 20px;
+      }
+
+    }
+
+  </style>
 
 </head>
 
+
 <body>
 
-  <header>
-    <h1>David Chimburuoma Odum</h1>
-    <p>Security Professional | Cybersecurity Analyst</p>
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
+  <nav>
+    <div class="container nav-container">
+
+      <a href="#" class="logo">
+        D<span>.</span>CO
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#lab">Home Lab</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
+  <header class="hero">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <div class="terminal-label">
+          $ whoami
+        </div>
+
+        <h1>
+          David Chimburuoma <span>Odum</span>
+        </h1>
+
+        <h2>
+          Security Professional | Cybersecurity Analyst
+        </h2>
+
+        <p>
+          Focused on Malware Analysis, Digital Forensics,
+          Security Operations, OSINT, Network Security,
+          and practical cybersecurity research.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#projects" class="btn btn-primary">
+            Explore My Work
+          </a>
+
+          <a href="https://github.com/davidchimburuomaodum"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn btn-secondary">
+            GitHub Profile
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </header>
+
 
   <main>
 
-    <section>
-      <h2>About Me</h2>
+    <!-- =========================
+         ABOUT
+    ========================== -->
 
-      <p>
-        My name is David Chimburuoma Odum. I am a Security Professional and
-        Cybersecurity Analyst passionate about protecting people,
-        organizations, and digital environments from evolving security threats.
-      </p>
+    <section id="about">
 
-      <p>
-        My areas of interest include cybersecurity analysis, threat intelligence,
-        OSINT, network security, security research, and cybersecurity awareness.
-        I enjoy learning new technologies, exploring security tools, and applying
-        practical cybersecurity knowledge to real-world challenges.
-      </p>
+      <div class="container">
 
-      <p>
-        I am continuously developing my technical skills through hands-on
-        projects, research, and practical cybersecurity activities. I use this
-        platform to document my journey, share my work, and continue growing
-        in the cybersecurity field.
-      </p>
+        <div class="section-heading">
 
-      <p>
-        My goal is to contribute to a safer digital environment through
-        continuous learning, responsible security practices, and meaningful
-        cybersecurity work.
-      </p>
+          <small>01 / ABOUT</small>
+
+          <h2>Professional Profile</h2>
+
+          <p>
+            A practical approach to cybersecurity built around
+            continuous learning, technical development, and
+            hands-on experience.
+          </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+          <div class="about-text">
+
+            <p>
+              I am David Chimburuoma Odum, a Security Professional
+              and Cybersecurity Analyst with a strong focus on
+              Malware Analysis and Digital Forensics.
+            </p>
+
+            <p>
+              My cybersecurity journey is driven by continuous
+              learning, practical experience, and the development
+              of technical skills required to understand,
+              investigate, and address cybersecurity challenges.
+            </p>
+
+            <p>
+              I build my knowledge through hands-on laboratories,
+              security research, practical projects, and the use
+              of industry-relevant cybersecurity tools across
+              Windows and Linux environments.
+            </p>
+
+          </div>
+
+
+          <div class="profile-card">
+
+            <h3>Professional Focus</h3>
+
+            <div class="profile-item">
+              <span>Primary Role</span>
+              Security Professional
+            </div>
+
+            <div class="profile-item">
+              <span>Cybersecurity Role</span>
+              Cybersecurity Analyst
+            </div>
+
+            <div class="profile-item">
+              <span>Core Focus</span>
+              Malware Analysis
+            </div>
+
+            <div class="profile-item">
+              <span>Additional Focus</span>
+              Digital Forensics
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
 
-    <section>
-      <h2>Areas of Focus</h2>
 
-      <ul>
-        <li>Cybersecurity Analysis</li>
-        <li>Threat Intelligence</li>
-        <li>Open-Source Intelligence (OSINT)</li>
-        <li>Network Security</li>
-        <li>Security Research</li>
-        <li>Cybersecurity Awareness</li>
-      </ul>
+    <!-- =========================
+         SKILLS
+    ========================== -->
+
+    <section id="skills">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <small>02 / TECHNICAL SKILLS</small>
+
+          <h2>Technical Capabilities</h2>
+
+          <p>
+            Technologies, operating systems, networking concepts,
+            tools, and scripting languages used in practical
+            cybersecurity learning and projects.
+          </p>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+          <div class="skill-card">
+
+            <div class="skill-icon">◉</div>
+
+            <h3>Operating Systems</h3>
+
+            <p>
+              Windows and Linux environments used for cybersecurity
+              laboratories, analysis, and practical experimentation.
+            </p>
+
+          </div>
+
+
+          <div class="skill-card">
+
+            <div class="skill-icon">⌁</div>
+
+            <h3>Networking</h3>
+
+            <p>
+              TCP/IP, HTTP, HTTPS, DNS, SSH, FTP, and Telnet.
+            </p>
+
+          </div>
+
+
+          <div class="skill-card">
+
+            <div class="skill-icon">⌘</div>
+
+            <h3>Cybersecurity Tools</h3>
+
+            <p>
+              Wireshark, Nmap, Metasploit, Autopsy, FTK Imager,
+              Ghidra, and IDA Free.
+            </p>
+
+          </div>
+
+
+          <div class="skill-card">
+
+            <div class="skill-icon">&lt;/&gt;</div>
+
+            <h3>Programming & Scripting</h3>
+
+            <p>
+              Python, Bash, and PowerShell for automation,
+              analysis, and practical security tasks.
+            </p>
+
+          </div>
+
+
+          <div class="skill-card">
+
+            <div class="skill-icon">▣</div>
+
+            <h3>Virtualization</h3>
+
+            <p>
+              VMware and VirtualBox for building and testing
+              isolated cybersecurity laboratory environments.
+            </p>
+
+          </div>
+
+
+          <div class="skill-card">
+
+            <div class="skill-icon">⌂</div>
+
+            <h3>Version Control</h3>
+
+            <p>
+              Git and GitHub for project documentation,
+              version control, and sharing technical work.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
 
-    <section>
-      <h2>My Projects</h2>
 
-      <p>
-        I document my cybersecurity projects, technical research, practical
-        security work, and learning journey through my GitHub profile.
-      </p>
+    <!-- =========================
+         PROJECTS
+    ========================== -->
 
-      <p>
-        <a href="https://github.com/davidchimburuomaodum">
-          View My GitHub Profile
-        </a>
-      </p>
+    <section id="projects">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <small>03 / PROJECTS</small>
+
+          <h2>Selected Projects</h2>
+
+          <p>
+            Practical cybersecurity projects and laboratory
+            exercises developed as part of my technical growth.
+          </p>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+          <article class="project-card">
+
+            <div class="project-number">PROJECT 01</div>
+
+            <h3>OSINT Investigation</h3>
+
+            <p>
+              Practical open-source intelligence investigation
+              involving information gathering, analysis,
+              correlation, and digital footprint research.
+            </p>
+
+          </article>
+
+
+          <article class="project-card">
+
+            <div class="project-number">PROJECT 02</div>
+
+            <h3>Log Analysis Lab</h3>
+
+            <p>
+              Practical analysis of IDS alerts and Windows Event
+              Logs to identify and investigate suspicious
+              security activity.
+            </p>
+
+          </article>
+
+
+          <article class="project-card">
+
+            <div class="project-number">PROJECT 03</div>
+
+            <h3>Malware Analysis</h3>
+
+            <p>
+              Practical malware analysis focused on examining
+              malicious behavior and identifying indicators
+              associated with suspicious files and activities.
+            </p>
+
+          </article>
+
+
+          <article class="project-card">
+
+            <div class="project-number">PROJECT 04</div>
+
+            <h3>Digital Forensics</h3>
+
+            <p>
+              Practical forensic investigation involving evidence
+              acquisition, file recovery, timeline analysis,
+              artifact examination, and investigation reporting.
+            </p>
+
+          </article>
+
+
+          <article class="project-card">
+
+            <div class="project-number">PROJECT 05</div>
+
+            <h3>Vulnerability Assessment</h3>
+
+            <p>
+              Security assessment and vulnerability scanning
+              designed to identify security weaknesses and
+              provide appropriate recommendations.
+            </p>
+
+          </article>
+
+
+          <article class="project-card">
+
+            <div class="project-number">PROJECT 06</div>
+
+            <h3>Penetration Testing</h3>
+
+            <p>
+              Practical penetration testing exercises focused
+              on identifying vulnerabilities, assessing security
+              risks, and documenting findings.
+            </p>
+
+          </article>
+
+
+          <article class="project-card">
+
+            <div class="project-number">PROJECT 07</div>
+
+            <h3>Digital Forensics CTF Case</h3>
+
+            <p>
+              Practical forensic examination involving evidence
+              verification, file-system analysis, deleted-file
+              recovery, artifact analysis, and timeline
+              reconstruction.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
     </section>
 
-    <section>
-      <h2>Professional Mission</h2>
 
-      <p>
-        I am committed to advancing digital security through continuous
-        learning, responsible security practices, threat awareness,
-        and practical cybersecurity knowledge.
-      </p>
-    </section>
+    <!-- =========================
+         HOME LAB
+    ========================== -->
 
-  </main>
+    <section id="lab" class="lab">
 
-  <footer>
-    <p>&copy; 2026 David Chimburuoma Odum. All rights reserved.</p>
-  </footer>
+      <div class="container">
 
-</body>
+        <div class="lab-box">
 
-</html>
+          <div class="section-heading">
+
+            <small>04 / CYBERSECURITY HOME LAB</small>
+
+            <h2>Hands-On Learning Environment</h2>
+
+  
