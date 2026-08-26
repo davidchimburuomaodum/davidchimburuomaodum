@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://davidchimburuomaodum.github.io/davidchimburuomaodum/">
-    <img src="https://img.shields.io/badge/🌐%20Visit%20My%20Website-0F2027?style=for-the-badge&logo=google-chrome&logoColor=00C8FF" />
+    <img src="https://img.shields.io/badge/%20Visit%20My%20Website-0F2027?style=for-the-badge&logo=google-chrome&logoColor=00C8FF" />
   </a>
 </p>
 
