@@ -16,15 +16,15 @@
 
 ---
 
-## About Me
+About Me
 
-I am a **Cybersecurity Analyst** specializing in **Malware Analysis** and **Digital Forensics**, with a degree in **Criminology and Security Studies**.
+I am a Cybersecurity Analyst, CEO, and Technology Leader specializing in Malware Analysis, Digital Forensics, and Cybersecurity.
 
-My background combines technical cybersecurity expertise with criminological knowledge, enabling me to investigate cyber incidents, analyze malicious software, conduct forensic investigations, and understand the behavioral aspects of cybercrime.
+With a degree in Criminology and Security Studies, I bring together technical cybersecurity expertise and a strong understanding of security, investigation, and the behavioral dimensions of cybercrime. This multidisciplinary background enables me to approach cybersecurity challenges from both a technical and investigative perspective.
 
-I am passionate about protecting digital environments, uncovering cyber threats, and continuously improving my technical skills through research, hands-on labs, and real-world security challenges.
+As a CEO, I am passionate about building innovative solutions, leading impactful initiatives, and helping individuals and organizations strengthen their digital security posture. My work focuses on identifying cyber threats, investigating security incidents, analyzing malicious software, conducting digital forensic investigations, and promoting cybersecurity awareness.
 
----
+I am committed to continuous learning, research, hands-on technical development, and solving real-world security challenges. Through leadership and innovation, my goal is to contribute to a safer digital environment while building solutions that create lasting value.
 
 ##  My Focus
 
