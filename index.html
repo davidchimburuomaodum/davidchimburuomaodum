@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="google-site-verification"
@@ -12,19 +10,19 @@
   <meta name="monetag"
         content="579dc59c5b5aaf01068fed0f8b6b17f0">
 
-  <title>David Chimburuoma Odum | CEO & Cybersecurity Analyst</title>
+  <title>David Chimburuoma Odum | CEO &amp; Cybersecurity Analyst</title>
 
   <meta name="description"
-        content="David Chimburuoma Odum is the CEO & Founder of DCO Cyber Solutions and a Cybersecurity Analyst specializing in Malware Analysis and Digital Forensics.">
+        content="David Chimburuoma Odum is the CEO and Founder of DCO Cyber Solutions and a Cybersecurity Analyst specializing in Malware Analysis, Digital Forensics, and Cybersecurity Training.">
 
-  <meta name="author"
-        content="David Chimburuoma Odum">
+  <meta name="author" content="David Chimburuoma Odum">
 
   <link rel="canonical"
         href="https://davidchimburuomaodum.github.io/">
 
-  <style>
+  <meta name="theme-color" content="#020617">
 
+  <style>
     * {
       box-sizing: border-box;
       margin: 0;
@@ -38,9 +36,7 @@
     body {
       min-height: 100vh;
       overflow-x: hidden;
-
       font-family: Arial, sans-serif;
-
       color: #e5e7eb;
 
       background:
@@ -64,41 +60,30 @@
       perspective: 1400px;
     }
 
-    /* =========================
-       3D SCENE
-    ========================== */
-
     .scene {
       min-height: 100vh;
-
       position: relative;
-
       overflow: hidden;
-
       transform-style: preserve-3d;
     }
 
-    /* =========================
-       MOVING 3D GRID
-    ========================== */
+    /* ANIMATED 3D GRID */
 
     .grid {
       position: fixed;
-
       width: 180vw;
       height: 180vh;
-
       left: -40vw;
       top: -30vh;
 
       background-image:
         linear-gradient(
-          rgba(37,99,235,0.16) 1px,
+          rgba(37, 99, 235, 0.16) 1px,
           transparent 1px
         ),
         linear-gradient(
           90deg,
-          rgba(37,99,235,0.16) 1px,
+          rgba(37, 99, 235, 0.16) 1px,
           transparent 1px
         );
 
@@ -111,63 +96,38 @@
         translateY(-40px);
 
       transform-origin: center;
-
-      animation:
-        gridMove
-        12s
-        linear
-        infinite;
-
+      animation: gridMove 12s linear infinite;
       opacity: 0.38;
-
       pointer-events: none;
-
       z-index: 0;
     }
 
     @keyframes gridMove {
-
       0% {
-        background-position:
-          0 0,
-          0 0;
+        background-position: 0 0, 0 0;
       }
 
       100% {
-        background-position:
-          0 55px,
-          55px 0;
+        background-position: 0 55px, 55px 0;
       }
-
     }
 
-    /* =========================
-       FLOATING PARTICLES
-    ========================== */
+    /* FLOATING PARTICLES */
 
     .particles {
       position: fixed;
-
       inset: 0;
-
       pointer-events: none;
-
       z-index: 1;
     }
 
     .particle {
       position: absolute;
-
       width: 3px;
       height: 3px;
-
       border-radius: 50%;
-
       background: #38bdf8;
-
-      box-shadow:
-        0 0 12px #38bdf8;
-
+      box-shadow: 0 0 12px #38bdf8;
       opacity: 0.6;
 
       animation:
@@ -227,80 +187,52 @@
     }
 
     @keyframes floatParticle {
-
       from {
-        transform:
-          translate3d(0, 0, 0)
-          scale(1);
+        transform: translate3d(0, 0, 0) scale(1);
       }
 
       to {
-        transform:
-          translate3d(
-            35px,
-            -45px,
-            100px
-          )
-          scale(1.8);
+        transform: translate3d(35px, -45px, 100px) scale(1.8);
       }
-
     }
 
-    /* =========================
-       LIGHT
-    ========================== */
+    /* MOVING BACKGROUND LIGHT */
 
     .light {
       position: fixed;
-
       width: 420px;
       height: 420px;
-
       border-radius: 50%;
 
       background:
         radial-gradient(
           circle,
-          rgba(37,99,235,0.22),
+          rgba(37, 99, 235, 0.22),
           transparent 68%
         );
 
       filter: blur(25px);
 
-      transform:
-        translate3d(
-          calc(var(--mouse-x, 50%) - 210px),
-          calc(var(--mouse-y, 50%) - 210px),
-          100px
-        );
+      left: calc(var(--mouse-x, 50%) - 210px);
+      top: calc(var(--mouse-y, 50%) - 210px);
 
       pointer-events: none;
-
       z-index: 1;
     }
 
-    /* =========================
-       HEADER
-    ========================== */
+    /* HEADER */
 
     header {
       position: relative;
-
       z-index: 5;
-
       text-align: center;
-
       padding: 90px 20px 70px;
 
-      background:
-        rgba(2,6,23,0.55);
-
-      backdrop-filter:
-        blur(12px);
+      background: rgba(2, 6, 23, 0.55);
+      backdrop-filter: blur(12px);
 
       border-bottom:
-        1px solid
-        rgba(255,255,255,0.08);
+        1px solid rgba(255, 255, 255, 0.08);
 
       transform:
         translate3d(
@@ -309,103 +241,71 @@
           40px
         );
 
-      transition:
-        transform 0.15s ease-out;
-
-      transform-style:
-        preserve-3d;
+      transition: transform 0.15s ease-out;
+      transform-style: preserve-3d;
     }
 
     header h1 {
       font-size: 44px;
-
       letter-spacing: 2px;
-
       color: white;
 
       text-shadow:
-        0 0 12px rgba(37,99,235,0.5),
-        0 0 35px rgba(37,99,235,0.25);
+        0 0 12px rgba(37, 99, 235, 0.5),
+        0 0 35px rgba(37, 99, 235, 0.25);
 
-      transform:
-        translateZ(70px);
+      transform: translateZ(70px);
     }
 
     header .position {
       margin-top: 14px;
-
       font-size: 21px;
-
       font-weight: bold;
-
       color: #38bdf8;
-
-      transform:
-        translateZ(55px);
+      transform: translateZ(55px);
     }
 
     header .profession {
       margin-top: 8px;
-
       font-size: 17px;
-
       color: #cbd5e1;
-
-      transform:
-        translateZ(40px);
+      transform: translateZ(40px);
     }
 
-    /* =========================
-       MAIN
-    ========================== */
+    /* MAIN CONTENT */
 
     main {
       position: relative;
-
       z-index: 5;
-
       max-width: 780px;
-
       margin: 75px auto;
-
       padding: 0 20px;
-
       perspective: 1400px;
     }
 
-    /* =========================
-       3D CARD
-    ========================== */
+    /* 3D ABOUT CARD */
 
     .about {
       position: relative;
-
       padding: 45px;
-
       border-radius: 22px;
-
       color: #222;
 
       background:
         linear-gradient(
           145deg,
-          rgba(255,255,255,0.98),
-          rgba(241,245,249,0.94)
+          rgba(255, 255, 255, 0.98),
+          rgba(241, 245, 249, 0.94)
         );
 
       border:
-        1px solid
-        rgba(255,255,255,0.5);
+        1px solid rgba(255, 255, 255, 0.5);
 
       box-shadow:
-        0 40px 100px
-        rgba(0,0,0,0.55),
+        0 40px 100px rgba(0, 0, 0, 0.55),
+        0 0 40px rgba(37, 99, 235, 0.12);
 
-        0 0 40px
-        rgba(37,99,235,0.12);
-
-      transform-style:
-        preserve-3d;
+      transform-style: preserve-3d;
 
       transform:
         rotateX(var(--card-x, 0deg))
@@ -416,90 +316,60 @@
         transform 0.12s ease-out,
         box-shadow 0.3s ease;
 
-      will-change:
-        transform;
+      will-change: transform;
     }
-
-    /* 3D glass shine */
 
     .about::before {
       content: "";
-
       position: absolute;
-
       inset: 0;
-
       border-radius: 22px;
 
       background:
         linear-gradient(
           125deg,
-          rgba(255,255,255,0.35),
+          rgba(255, 255, 255, 0.35),
           transparent 35%,
           transparent 65%,
-          rgba(37,99,235,0.08)
+          rgba(37, 99, 235, 0.08)
         );
 
       pointer-events: none;
-
-      transform:
-        translateZ(1px);
+      transform: translateZ(1px);
     }
-
-    /* 3D edge */
 
     .about::after {
       content: "";
-
       position: absolute;
-
       left: 15px;
       right: 15px;
-
       bottom: -15px;
-
       height: 20px;
-
       border-radius: 50%;
-
-      background:
-        rgba(0,0,0,0.3);
-
+      background: rgba(0, 0, 0, 0.3);
       filter: blur(15px);
-
       z-index: -1;
     }
 
     .about h2 {
       color: #111827;
-
       font-size: 29px;
-
       margin-bottom: 20px;
-
-      transform:
-        translateZ(75px);
+      transform: translateZ(75px);
     }
 
     .about > p {
       margin-bottom: 20px;
-
-      transform:
-        translateZ(45px);
+      line-height: 1.7;
+      transform: translateZ(45px);
     }
 
-    /* =========================
-       COMPANY 3D BLOCK
-    ========================== */
+    /* DCO CYBER SOLUTIONS */
 
     .company {
       margin: 32px 0;
-
       padding: 22px;
-
-      border-left:
-        5px solid #2563eb;
-
+      border-left: 5px solid #2563eb;
       border-radius: 12px;
 
       background:
@@ -510,17 +380,11 @@
         );
 
       box-shadow:
-        0 15px 30px
-        rgba(15,23,42,0.16);
+        0 15px 30px rgba(15, 23, 42, 0.16);
 
-      transform:
-        translateZ(80px);
-
-      transform-style:
-        preserve-3d;
-
-      transition:
-        transform 0.3s ease;
+      transform: translateZ(80px);
+      transform-style: preserve-3d;
+      transition: transform 0.3s ease;
     }
 
     .company:hover {
@@ -531,104 +395,66 @@
 
     .company h3 {
       color: #1d4ed8;
-
       font-size: 21px;
-
       margin-bottom: 5px;
-
-      transform:
-        translateZ(25px);
+      transform: translateZ(25px);
     }
 
     .company p {
       margin: 0;
-
-      transform:
-        translateZ(20px);
+      line-height: 1.6;
+      transform: translateZ(20px);
     }
 
-    /* =========================
-       ARROW
-    ========================== */
+    /* ANIMATED ARROW */
 
     .arrow {
       text-align: center;
-
       font-size: 55px;
-
       font-weight: bold;
-
       color: #2563eb;
-
       margin: 0 0 10px;
 
       text-shadow:
-        0 0 15px
-        rgba(37,99,235,0.65);
+        0 0 15px rgba(37, 99, 235, 0.65);
 
-      transform:
-        translateZ(80px);
-
-      animation:
-        arrowFloat
-        1.5s
-        ease-in-out
-        infinite;
+      transform: translateZ(80px);
+      animation: arrowFloat 1.5s ease-in-out infinite;
     }
 
     @keyframes arrowFloat {
-
       0%, 100% {
-        transform:
-          translateY(0)
-          translateZ(80px);
+        transform: translateY(0) translateZ(80px);
       }
 
       50% {
-        transform:
-          translateY(12px)
-          translateZ(80px);
+        transform: translateY(12px) translateZ(80px);
       }
-
     }
 
-    /* =========================
-       BUTTONS
-    ========================== */
+    /* BUTTONS */
 
     .buttons {
       display: flex;
-
       justify-content: center;
-
       flex-wrap: wrap;
-
       gap: 18px;
-
-      transform-style:
-        preserve-3d;
-
-      transform:
-        translateZ(90px);
+      transform-style: preserve-3d;
+      transform: translateZ(90px);
     }
 
     .buttons a {
       position: relative;
-
       display: inline-block;
-
       padding: 15px 25px;
-
       border-radius: 10px;
-
       color: white;
-
       text-decoration: none;
-
       font-weight: bold;
+      text-align: center;
+      line-height: 1.4;
 
-      transform-style:
-        preserve-3d;
+      transform-style: preserve-3d;
 
       transition:
         transform 0.25s ease,
@@ -637,44 +463,25 @@
 
     .buttons a::before {
       content: "";
-
       position: absolute;
-
       inset: 0;
-
       border-radius: 10px;
-
-      background:
-        rgba(255,255,255,0.12);
-
-      transform:
-        translateZ(8px);
-
+      background: rgba(255, 255, 255, 0.12);
+      transform: translateZ(8px);
       pointer-events: none;
     }
 
     .buttons a::after {
       content: "";
-
       position: absolute;
-
       left: 7px;
       right: 7px;
-
       bottom: -9px;
-
       height: 10px;
-
       border-radius: 0 0 10px 10px;
-
-      background:
-        rgba(0,0,0,0.35);
-
-      filter:
-        blur(3px);
-
-      transform:
-        translateZ(-10px);
+      background: rgba(0, 0, 0, 0.35);
+      filter: blur(3px);
+      transform: translateZ(-10px);
     }
 
     .buttons a:hover {
@@ -699,8 +506,7 @@
         );
 
       box-shadow:
-        0 12px 30px
-        rgba(6,182,212,0.4);
+        0 12px 30px rgba(6, 182, 212, 0.4);
     }
 
     .github-btn {
@@ -712,50 +518,45 @@
         );
 
       box-shadow:
-        0 12px 30px
-        rgba(37,99,235,0.4);
+        0 12px 30px rgba(37, 99, 235, 0.4);
     }
 
-    /* =========================
-       FOOTER
-    ========================== */
+    /* KEYBOARD ACCESSIBILITY */
+
+    .buttons a:focus-visible {
+      outline: 3px solid #0f172a;
+      outline-offset: 5px;
+    }
+
+    /* FOOTER */
 
     footer {
       position: relative;
-
       z-index: 5;
-
       margin-top: 80px;
-
       padding: 28px 20px;
-
       text-align: center;
-
+      line-height: 1.7;
       color: #cbd5e1;
 
-      background:
-        rgba(2,6,23,0.85);
+      background: rgba(2, 6, 23, 0.85);
 
       border-top:
-        1px solid
-        rgba(255,255,255,0.08);
+        1px solid rgba(255, 255, 255, 0.08);
 
-      transform:
-        translateZ(30px);
+      transform: translateZ(30px);
     }
 
-    /* =========================
-       MOBILE
-    ========================== */
+    /* MOBILE RESPONSIVENESS */
 
     @media (max-width: 600px) {
-
       header {
         padding: 65px 20px;
       }
 
       header h1 {
         font-size: 30px;
+        letter-spacing: 1px;
       }
 
       header .position {
@@ -764,6 +565,7 @@
 
       header .profession {
         font-size: 15px;
+        line-height: 1.7;
       }
 
       main {
@@ -772,13 +574,15 @@
 
       .about {
         padding: 28px 22px;
-
-        transform:
-          translateZ(20px) !important;
+        transform: translateZ(20px) !important;
       }
 
       .about h2 {
         font-size: 25px;
+      }
+
+      .company {
+        padding: 18px;
       }
 
       .buttons {
@@ -787,347 +591,244 @@
 
       .buttons a {
         width: 100%;
-
-        text-align: center;
       }
 
       .grid {
         opacity: 0.22;
       }
 
+      .light {
+        width: 250px;
+        height: 250px;
+      }
     }
 
-    /* =========================
-       REDUCE MOTION
-    ========================== */
+    /* REDUCE MOTION FOR ACCESSIBILITY */
 
     @media (prefers-reduced-motion: reduce) {
-
       *,
       *::before,
       *::after {
         animation: none !important;
-
         transition: none !important;
+        scroll-behavior: auto !important;
       }
-
     }
-
   </style>
-
 </head>
 
-
 <body>
+  <div class="scene">
 
-<div class="scene">
+    <!-- ANIMATED 3D GRID -->
+    <div class="grid" aria-hidden="true"></div>
 
-  <!-- LIVE 3D GRID -->
-  <div class="grid"></div>
+    <!-- MOVING LIGHT -->
+    <div class="light" aria-hidden="true"></div>
 
-  <!-- LIVE LIGHT -->
-  <div class="light"></div>
+    <!-- FLOATING PARTICLES -->
+    <div class="particles" aria-hidden="true">
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+    </div>
 
-  <!-- FLOATING PARTICLES -->
-  <div class="particles">
+    <!-- HEADER -->
+    <header>
+      <h1>David Chimburuoma Odum</h1>
 
-    <span class="particle"></span>
-    <span class="particle"></span>
-    <span class="particle"></span>
-    <span class="particle"></span>
-    <span class="particle"></span>
-    <span class="particle"></span>
-    <span class="particle"></span>
-    <span class="particle"></span>
+      <p class="position">
+        CEO &amp; Founder, DCO Cyber Solutions
+      </p>
+
+      <p class="profession">
+        Cybersecurity Analyst |
+        Malware Analysis |
+        Digital Forensics
+      </p>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <section class="about" id="aboutCard" aria-labelledby="aboutTitle">
+
+        <h2 id="aboutTitle">About Me</h2>
+
+        <p>
+          I'm David Chimburuoma Odum, CEO &amp; Founder
+          of DCO Cyber Solutions and a Cybersecurity
+          Analyst with a strong interest in Malware
+          Analysis and Digital Forensics.
+        </p>
+
+        <p>
+          My journey in cybersecurity is driven by
+          curiosity, continuous learning, and a desire
+          to understand how technology and security
+          work together.
+        </p>
+
+        <p>
+          I enjoy learning new things, developing
+          myself, exploring cybersecurity, and gaining
+          practical knowledge that can help me grow
+          both personally and professionally.
+        </p>
+
+        <p>
+          I believe that growth comes from consistency,
+          discipline, continuous learning, and the
+          willingness to keep improving.
+        </p>
+
+        <!-- COMPANY INFORMATION -->
+        <div class="company">
+          <h3>DCO Cyber Solutions</h3>
+
+          <p>
+            DCO Cyber Solutions provides professional
+            services focused on Malware Analysis,
+            Digital Forensics, and Cybersecurity Training.
+          </p>
+        </div>
+
+        <p>
+          Click on a button below to explore my
+          professional work, portfolio, and
+          DCO Cyber Solutions.
+        </p>
+
+        <div class="arrow" aria-hidden="true">↓</div>
+
+        <!-- BOTH BUTTONS OPEN THE SAME VERCEL WEBSITE -->
+        <div class="buttons">
+
+          <a
+            class="website-btn"
+            href="https://david-portfolio-swart-five.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            Explore My Portfolio
+          </a>
+
+          <a
+            class="github-btn"
+            href="https://david-portfolio-swart-five.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            Contact &amp; Explore
+          </a>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      &copy; 2026 David Chimburuoma Odum |
+      CEO &amp; Founder, DCO Cyber Solutions
+    </footer>
 
   </div>
 
-
-  <!-- HEADER -->
-
-  <header>
-
-    <h1>
-      David Chimburuoma Odum
-    </h1>
-
-    <p class="position">
-      CEO &amp; Founder, DCO Cyber Solutions
-    </p>
-
-    <p class="profession">
-      Cybersecurity Analyst |
-      Malware Analysis |
-      Digital Forensics
-    </p>
-
-  </header>
-
-
-  <!-- MAIN -->
-
-  <main>
-
-    <div class="about" id="aboutCard">
-
-      <h2>
-        About Me
-      </h2>
-
-      <p>
-        I'm David Chimburuoma Odum,
-        CEO &amp; Founder of DCO Cyber Solutions
-        and a Cybersecurity Analyst with a strong
-        interest in Malware Analysis and Digital
-        Forensics.
-      </p>
-
-      <p>
-        My journey in cybersecurity is driven by
-        curiosity, continuous learning, and a desire
-        to understand how technology and security
-        work together.
-      </p>
-
-      <p>
-        I enjoy learning new things, developing
-        myself, exploring cybersecurity, and gaining
-        practical knowledge that can help me grow
-        both personally and professionally.
-      </p>
-
-      <p>
-        I believe that growth comes from consistency,
-        discipline, continuous learning, and the
-        willingness to keep improving.
-      </p>
-
-
-      <!-- DCO CYBER SOLUTIONS -->
-
-      <div class="company">
-
-        <h3>
-          DCO Cyber Solutions
-        </h3>
-
-        <p>
-          DCO Cyber Solutions provides professional
-          services focused on Malware Analysis,
-          Digital Forensics, and Cybersecurity Training.
-        </p>
-
-      </div>
-
-
-      <p>
-        Click on a button below to explore my
-        professional work, projects, and
-        DCO Cyber Solutions.
-      </p>
-
-
-      <div class="arrow">
-        ↓
-      </div>
-
-
-      <!-- BUTTONS -->
-
-      <div class="buttons">
-
-        <a
-          class="website-btn"
-          href="https://dco-cyber-solutions.netlify.app"
-          target="_blank"
-          rel="noopener noreferrer">
-
-          Visit DCO Cyber Solutions
-
-        </a>
-
-
-        <a
-          class="github-btn"
-          href="https://github.com/davidchimburuomaodum"
-          target="_blank"
-          rel="noopener noreferrer">
-
-          Visit My GitHub
-
-        </a>
-
-      </div>
-
-    </div>
-
-  </main>
-
-
-  <footer>
-
-    © 2026 David Chimburuoma Odum |
-    CEO &amp; Founder, DCO Cyber Solutions
-
-  </footer>
-
-</div>
-
-
-<!-- =========================
-     LIVE 3D JAVASCRIPT
-========================== -->
-
-<script>
-
-  const root =
-    document.documentElement;
-
-  const card =
-    document.getElementById("aboutCard");
-
-  let targetX = 50;
-  let targetY = 50;
-
-  let currentX = 50;
-  let currentY = 50;
-
-  /*
-   * Mouse movement
-   */
-
-  document.addEventListener(
-    "mousemove",
-    function(event) {
-
-      targetX =
-        (event.clientX /
-        window.innerWidth) * 100;
-
-      targetY =
-        (event.clientY /
-        window.innerHeight) * 100;
-
-    }
-  );
-
-
-  /*
-   * Smooth live animation
-   */
-
-  function animate3D() {
-
-    currentX +=
-      (targetX - currentX) * 0.06;
-
-    currentY +=
-      (targetY - currentY) * 0.06;
-
-
-    /*
-     * Background light
-     */
-
-    root.style.setProperty(
-      "--mouse-x",
-      currentX + "%"
+  <!-- LIVE 3D JAVASCRIPT -->
+  <script>
+    const root = document.documentElement;
+    const card = document.getElementById("aboutCard");
+    const motionPreference = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
     );
 
-    root.style.setProperty(
-      "--mouse-y",
-      currentY + "%"
-    );
+    let targetX = 50;
+    let targetY = 50;
+    let currentX = 50;
+    let currentY = 50;
+    let animationFrame;
 
-
-    /*
-     * Card rotation
-     */
-
-    const rotateY =
-      (currentX - 50) * 0.10;
-
-    const rotateX =
-      (50 - currentY) * 0.08;
-
-
-    root.style.setProperty(
-      "--card-x",
-      rotateX + "deg"
-    );
-
-    root.style.setProperty(
-      "--card-y",
-      rotateY + "deg"
-    );
-
-
-    /*
-     * Header movement
-     */
-
-    const headerX =
-      (currentX - 50) * 0.08;
-
-    const headerY =
-      (currentY - 50) * 0.05;
-
-    root.style.setProperty(
-      "--header-x",
-      headerX + "px"
-    );
-
-    root.style.setProperty(
-      "--header-y",
-      headerY + "px"
-    );
-
-
-    requestAnimationFrame(
-      animate3D
-    );
-
-  }
-
-  animate3D();
-
-
-  /*
-   * Mobile automatic 3D movement
-   */
-
-  if (
-    window.matchMedia(
-      "(pointer: coarse)"
-    ).matches
-  ) {
-
-    let angle = 0;
-
-    function mobile3D() {
-
-      angle += 0.015;
-
-      targetX =
-        50 +
-        Math.sin(angle) * 12;
-
-      targetY =
-        50 +
-        Math.cos(angle) * 8;
-
-      requestAnimationFrame(
-        mobile3D
-      );
-
+    function updatePointerPosition(x, y) {
+      targetX = (x / window.innerWidth) * 100;
+      targetY = (y / window.innerHeight) * 100;
     }
 
-    mobile3D();
+    /* DESKTOP POINTER MOVEMENT */
+    document.addEventListener("pointermove", function(event) {
+      if (event.pointerType === "mouse") {
+        updatePointerPosition(event.clientX, event.clientY);
+      }
+    });
 
-  }
+    /* 3D ANIMATION */
+    function animate3D() {
+      if (motionPreference.matches) {
+        return;
+      }
 
-</script>
+      currentX += (targetX - currentX) * 0.06;
+      currentY += (targetY - currentY) * 0.06;
 
+      root.style.setProperty("--mouse-x", currentX + "%");
+      root.style.setProperty("--mouse-y", currentY + "%");
 
+      const rotateY = (currentX - 50) * 0.10;
+      const rotateX = (50 - currentY) * 0.08;
+
+      root.style.setProperty("--card-x", rotateX + "deg");
+      root.style.setProperty("--card-y", rotateY + "deg");
+
+      const headerX = (currentX - 50) * 0.08;
+      const headerY = (currentY - 50) * 0.05;
+
+      root.style.setProperty("--header-x", headerX + "px");
+      root.style.setProperty("--header-y", headerY + "px");
+
+      animationFrame = requestAnimationFrame(animate3D);
+    }
+
+    /* MOBILE AUTOMATIC MOVEMENT */
+    if (
+      window.matchMedia("(pointer: coarse)").matches &&
+      !motionPreference.matches
+    ) {
+      let angle = 0;
+
+      function mobile3D() {
+        if (motionPreference.matches) {
+          return;
+        }
+
+        angle += 0.015;
+
+        targetX = 50 + Math.sin(angle) * 12;
+        targetY = 50 + Math.cos(angle) * 8;
+
+        requestAnimationFrame(mobile3D);
+      }
+
+      mobile3D();
+    }
+
+    animate3D();
+
+    /* STOP ANIMATION WHEN REDUCED MOTION IS PREFERRED */
+    motionPreference.addEventListener("change", function(event) {
+      if (event.matches) {
+        cancelAnimationFrame(animationFrame);
+
+        root.style.setProperty("--card-x", "0deg");
+        root.style.setProperty("--card-y", "0deg");
+        root.style.setProperty("--header-x", "0px");
+        root.style.setProperty("--header-y", "0px");
+      } else {
+        animate3D();
+      }
+    });
+  </script>
 </body>
 </html>
