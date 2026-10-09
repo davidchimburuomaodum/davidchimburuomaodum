@@ -9,21 +9,18 @@
     <meta name="description" content="Official portfolio of David Chimburuoma Odum, cybersecurity analyst, CEO and technology leader specializing in malware analysis, digital forensics and cybersecurity.">
 
     <meta name="google-site-verification" content="sWwOeNicUUC96pjH_v7wr7_TMijOzLxPR-y1oJTFDIao">
-
     <meta name="monetag" content="579dc59c5b5aaf01068fed0f8b6b17f0">
-
-    <meta name="theme-color" content="#030712">
+    <meta name="theme-color" content="#08040f">
 
     <link rel="canonical" href="https://davidchimburuomaodum.github.io/">
 
     <style>
         :root {
-            --bg: #030712;
-            --blue: #00aaff;
-            --cyan: #00f0ff;
-            --text: #f4f8ff;
-            --muted: #a4b4ca;
-            --panel: rgba(9, 21, 43, 0.72);
+            --bg: #08040f;
+            --purple: #a970ff;
+            --violet: #7c3cff;
+            --text: #f8f3ff;
+            --muted: #aaa0bd;
         }
 
         * {
@@ -45,7 +42,7 @@
             line-height: 1.7;
         }
 
-        /* LIVE ANIMATED BACKGROUND */
+        /* LIVE 3D BACKGROUND */
         #bg3d {
             position: fixed;
             inset: 0;
@@ -55,96 +52,95 @@
             pointer-events: none;
         }
 
-        .ambient-light {
+        .purple-glow {
             position: fixed;
             inset: 0;
             z-index: 0;
             pointer-events: none;
             background:
                 radial-gradient(
-                    ellipse at 50% 38%,
-                    rgba(0, 115, 255, 0.15),
-                    transparent 48%
+                    ellipse at 58% 60%,
+                    rgba(105, 27, 255, 0.23),
+                    transparent 43%
                 ),
                 radial-gradient(
-                    ellipse at 10% 80%,
-                    rgba(0, 240, 255, 0.07),
-                    transparent 35%
+                    ellipse at 15% 20%,
+                    rgba(85, 35, 170, 0.10),
+                    transparent 38%
                 );
-            animation: ambientPulse 8s ease-in-out infinite alternate;
+            animation: glowPulse 6s ease-in-out infinite alternate;
         }
 
-        @keyframes ambientPulse {
+        @keyframes glowPulse {
             from {
-                opacity: 0.5;
-                transform: scale(1);
+                opacity: 0.55;
             }
-
             to {
                 opacity: 1;
-                transform: scale(1.08);
             }
         }
 
-        /* SITE CONTENT */
         .site {
             position: relative;
             z-index: 1;
         }
 
+        /* HEADER */
         header {
-            width: 100%;
-            padding: 22px 7%;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            border-bottom: 1px solid rgba(0, 200, 255, 0.16);
-            background: rgba(3, 7, 18, 0.52);
+            gap: 15px;
+            padding: 22px 7%;
+            border-bottom: 1px solid rgba(190, 140, 255, 0.20);
+            background: rgba(8, 4, 15, 0.70);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
         }
 
         .brand {
-            color: white;
+            color: #fff;
             font-weight: 800;
             font-size: 1.15rem;
             letter-spacing: 1px;
             text-decoration: none;
+            white-space: nowrap;
         }
 
         .brand span {
-            color: var(--cyan);
+            color: #bd91ff;
         }
 
         .status {
-            color: #8deeff;
-            font-size: 0.78rem;
-            letter-spacing: 1.5px;
+            color: #cbb0ff;
+            font-size: 0.75rem;
+            letter-spacing: 1.4px;
+            text-align: right;
             text-transform: uppercase;
         }
 
-        /* HERO SECTION */
+        /* HERO */
         .hero {
-            min-height: 83vh;
-            padding: 90px 7% 75px;
+            min-height: 88vh;
+            padding: 75px 7% 35px;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
+            position: relative;
         }
 
         .hero-content {
             width: 100%;
             max-width: 950px;
-            animation: enter 1.1s ease both;
+            animation: enter 1.2s ease both;
         }
 
         @keyframes enter {
             from {
                 opacity: 0;
-                transform: translateY(25px);
+                transform: translateY(24px);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -153,33 +149,33 @@
 
         .eyebrow {
             display: inline-block;
-            margin-bottom: 25px;
+            margin-bottom: 24px;
             padding: 7px 15px;
-            border: 1px solid rgba(0, 220, 255, 0.35);
+            border: 1px solid rgba(190, 135, 255, 0.50);
             border-radius: 30px;
-            color: #9aefff;
-            background: rgba(0, 170, 255, 0.08);
-            font-size: 0.78rem;
+            color: #d4b7ff;
+            background: rgba(111, 49, 220, 0.15);
+            font-size: 0.75rem;
             font-weight: bold;
             letter-spacing: 2px;
             text-transform: uppercase;
         }
 
         h1 {
-            font-size: clamp(2.4rem, 6.4vw, 5.3rem);
+            margin-bottom: 22px;
+            font-size: clamp(2.5rem, 7vw, 5.4rem);
             line-height: 1.12;
             letter-spacing: -2px;
-            margin-bottom: 22px;
-            text-shadow: 0 0 35px rgba(0, 145, 255, 0.18);
+            text-shadow: 0 0 35px rgba(151, 83, 255, 0.28);
         }
 
         h1 span {
-            color: var(--cyan);
+            color: #c49aff;
             background: linear-gradient(
                 90deg,
-                #00aaff,
-                #00f0ff,
-                #83aaff
+                #a36bff,
+                #e1c5ff,
+                #9760ff
             );
             -webkit-background-clip: text;
             background-clip: text;
@@ -187,13 +183,13 @@
         }
 
         .subtitle {
-            color: #d3e5f8;
-            font-size: clamp(1rem, 2.3vw, 1.35rem);
-            margin-bottom: 18px;
+            margin-bottom: 16px;
+            color: #e0d3f3;
+            font-size: clamp(1rem, 2.5vw, 1.35rem);
         }
 
         .description {
-            max-width: 720px;
+            max-width: 700px;
             margin: 0 auto;
             color: var(--muted);
             font-size: 1rem;
@@ -202,132 +198,135 @@
         .actions {
             display: flex;
             justify-content: center;
-            margin-top: 35px;
+            margin-top: 30px;
         }
 
         .primary-button {
-            position: relative;
             display: inline-flex;
+            min-height: 54px;
             align-items: center;
             justify-content: center;
-            min-height: 54px;
             padding: 14px 30px;
-            border: 1px solid rgba(255, 255, 255, 0.35);
+            border: 1px solid rgba(230, 210, 255, 0.55);
             border-radius: 8px;
-            background: linear-gradient(110deg, #007bff, #00c8ff);
-            color: #00101e;
+            background: linear-gradient(110deg, #a16aff, #c5a0ff);
+            color: #170a2c;
             text-decoration: none;
-            font-weight: 800;
             font-size: 1rem;
-            box-shadow: 0 0 25px rgba(0, 170, 255, 0.25);
+            font-weight: 800;
+            box-shadow: 0 0 28px rgba(144, 75, 255, 0.30);
             transition: transform 0.25s ease, box-shadow 0.25s ease;
         }
 
         .primary-button:hover {
             transform: translateY(-4px);
-            box-shadow: 0 0 38px rgba(0, 210, 255, 0.48);
+            box-shadow: 0 0 42px rgba(172, 115, 255, 0.60);
         }
 
-        /* ABOUT ME SECTION */
-        .section {
-            padding: 65px 7%;
-        }
-
-        .section-heading {
-            text-align: center;
-            font-size: clamp(1.8rem, 4vw, 2.6rem);
-            margin-bottom: 14px;
-        }
-
-        .section-heading span {
-            color: var(--cyan);
-        }
-
-        .section-intro {
-            max-width: 680px;
-            margin: 0 auto 35px;
-            color: var(--muted);
-            text-align: center;
-        }
-
-        .about {
-            max-width: 850px;
+        /* SUBTLE HERO BOTTOM LINE */
+        .bottom-note {
+            width: 100%;
+            max-width: 950px;
             margin: 0 auto;
-            padding: 35px;
-            border: 1px solid rgba(0, 190, 255, 0.18);
-            border-radius: 14px;
-            background: rgba(7, 16, 34, 0.76);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            padding: 18px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            border-top: 1px solid rgba(193, 151, 255, 0.20);
+            color: #a99abb;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
-        .about p {
-            margin-bottom: 15px;
-            color: var(--muted);
-        }
-
-        .about p:last-child {
-            margin-bottom: 0;
+        .bottom-note .accent {
+            color: #c4a1ff;
         }
 
         /* FOOTER */
         footer {
-            padding: 28px 7%;
+            padding: 30px 7%;
             text-align: center;
-            border-top: 1px solid rgba(0, 200, 255, 0.16);
-            background: rgba(3, 7, 18, 0.7);
-            color: #8397b1;
+            border-top: 1px solid rgba(190, 140, 255, 0.18);
+            background: rgba(8, 4, 15, 0.78);
+            color: #9386a5;
             font-size: 0.85rem;
         }
 
-        footer span {
-            color: var(--cyan);
+        footer .footer-brand {
+            display: inline-block;
+            margin-bottom: 10px;
+            color: #fff;
+            font-size: 1.15rem;
+            font-weight: 800;
         }
 
-        /* MOBILE RESPONSIVENESS */
-        @media (max-width: 800px) {
-            .hero {
-                min-height: 75vh;
-                padding-top: 70px;
-                padding-bottom: 60px;
-            }
-
-            h1 {
-                letter-spacing: -1px;
-            }
-
-            .status {
-                font-size: 0.65rem;
-                letter-spacing: 0.8px;
-            }
-
-            .about {
-                padding: 25px;
-            }
+        footer .footer-brand span {
+            color: #bd91ff;
         }
 
-        @media (max-width: 480px) {
+        footer .footer-tagline {
+            margin-bottom: 14px;
+        }
+
+        footer .copyright {
+            color: #9386a5;
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
             header {
                 padding: 18px 5%;
-                gap: 12px;
             }
 
             .brand {
-                font-size: 0.9rem;
+                font-size: 0.88rem;
+                letter-spacing: 0;
             }
 
             .status {
-                max-width: 125px;
-                text-align: right;
+                max-width: 130px;
+                font-size: 0.62rem;
+                letter-spacing: 0.7px;
             }
 
-            .section {
-                padding: 50px 5%;
+            .hero {
+                min-height: 86vh;
+                padding: 65px 6% 25px;
+                align-items: flex-start;
+            }
+
+            .hero-content {
+                padding-top: 10px;
+            }
+
+            h1 {
+                font-size: clamp(2.3rem, 10vw, 3.6rem);
+                letter-spacing: -1px;
+            }
+
+            .eyebrow {
+                font-size: 0.65rem;
+                letter-spacing: 1.3px;
+            }
+
+            .description {
+                font-size: 0.93rem;
             }
 
             .primary-button {
                 width: 100%;
                 max-width: 280px;
+            }
+
+            .bottom-note {
+                font-size: 0.58rem;
+                letter-spacing: 1px;
+            }
+
+            footer {
+                padding: 25px 5%;
             }
         }
 
@@ -336,11 +335,14 @@
                 scroll-behavior: auto;
             }
 
+            .hero-content,
+            .purple-glow {
+                animation: none;
+            }
+
             *,
             *::before,
             *::after {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
                 transition-duration: 0.01ms !important;
             }
         }
@@ -349,16 +351,14 @@
 
 <body>
 
-    <!-- LIVE BACKGROUND CANVAS -->
     <canvas id="bg3d" aria-hidden="true"></canvas>
-    <div class="ambient-light" aria-hidden="true"></div>
+    <div class="purple-glow" aria-hidden="true"></div>
 
     <div class="site">
 
-        <!-- HEADER -->
         <header>
             <a class="brand" href="#home">
-                DCO <span>CYBER SOLUTIONS</span>
+                DCO<span>.</span>
             </a>
 
             <div class="status">
@@ -367,8 +367,6 @@
         </header>
 
         <main>
-
-            <!-- MAIN INTRODUCTION -->
             <section class="hero" id="home">
                 <div class="hero-content">
 
@@ -399,63 +397,31 @@
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Contact &amp; Explore
+                            Contact &amp; Explore&nbsp; ↗
                         </a>
                     </div>
 
                 </div>
             </section>
 
-            <!-- ABOUT ME: EXPERTISE SECTION REMOVED -->
-            <section class="section" id="about">
-
-                <h2 class="section-heading">
-                    About <span>Me</span>
-                </h2>
-
-                <p class="section-intro">
-                    Security knowledge meets technical innovation.
-                </p>
-
-                <div class="about">
-
-                    <p>
-                        I am David Chimburuoma Odum, a cybersecurity analyst,
-                        CEO, and technology leader with an academic background
-                        in Criminology and Security Studies.
-                    </p>
-
-                    <p>
-                        My interests include malware analysis, digital
-                        forensics, cyber incident investigation, and the
-                        behavioral aspects of cybercrime. My background
-                        combines technical security interests with an
-                        investigative understanding of security challenges.
-                    </p>
-
-                    <p>
-                        As CEO of DCO Cyber Solutions, my focus is on
-                        technology, cybersecurity awareness, innovative
-                        solutions, and strengthening digital security.
-                        I value continuous learning, practical research,
-                        hands-on development, and real-world security
-                        challenges.
-                    </p>
-
-                </div>
-            </section>
-
+            <div class="bottom-note" style="margin: 0 auto; width: 86%;">
+                <span>Digital Defence</span>
+                <span class="accent">/// DCO</span>
+            </div>
         </main>
 
-        <!-- FOOTER -->
         <footer>
-            &copy; <span id="year"></span> David Chimburuoma Odum.
-            All rights reserved.
+            <div class="footer-brand">DCO<span>.</span></div>
+            <p class="footer-tagline">
+                Cybersecurity · Investigation · Innovation
+            </p>
+            <p class="copyright">
+                &copy; <span id="year"></span> David Chimburuoma Odum
+            </p>
         </footer>
 
     </div>
 
-    <!-- LIVE ANIMATED 3D-STYLE BACKGROUND -->
     <script>
         (() => {
             const canvas = document.getElementById("bg3d");
@@ -463,16 +429,15 @@
 
             if (!ctx) return;
 
-            const reducedMotion = window.matchMedia(
+            const reduceMotion = window.matchMedia(
                 "(prefers-reduced-motion: reduce)"
             ).matches;
 
             let width = 0;
             let height = 0;
             let dpr = 1;
-            let animationId;
+            let time = 0;
             let lastTime = 0;
-            let elapsed = 0;
 
             const pointer = {
                 x: 0,
@@ -481,7 +446,7 @@
                 targetY: 0
             };
 
-            let particles = [];
+            const particles = [];
 
             function resize() {
                 width = window.innerWidth;
@@ -490,213 +455,239 @@
 
                 canvas.width = Math.round(width * dpr);
                 canvas.height = Math.round(height * dpr);
-                canvas.style.width = width + "px";
-                canvas.style.height = height + "px";
 
                 ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
+                particles.length = 0;
+
                 const count = Math.min(
-                    110,
-                    Math.max(35, Math.floor(width * height / 11000))
+                    90,
+                    Math.max(35, Math.floor(width * height / 14000))
                 );
 
-                particles = Array.from({ length: count }, () => ({
-                    x: Math.random() * 2 - 1,
-                    y: Math.random() * 2 - 1,
-                    z: Math.random(),
-                    speed: 0.025 + Math.random() * 0.07,
-                    size: 0.5 + Math.random() * 1.8
-                }));
+                for (let i = 0; i < count; i++) {
+                    particles.push({
+                        x: Math.random() * width,
+                        y: Math.random() * height,
+                        size: 0.5 + Math.random() * 1.6,
+                        speed: 0.15 + Math.random() * 0.5,
+                        phase: Math.random() * Math.PI * 2
+                    });
+                }
             }
 
-            function project(x, y, z, time) {
-                const horizon = height * 0.48;
-                const depth = 0.12 + z * 1.5;
-                const perspective = 1 / depth;
+            function rotatePoint(point, ax, ay, az) {
+                let { x, y, z } = point;
 
-                const driftX =
-                    pointer.x * 24 +
-                    Math.sin(time * 0.00025) * 12;
+                const cosX = Math.cos(ax);
+                const sinX = Math.sin(ax);
 
-                const driftY = pointer.y * 12;
+                const y1 = y * cosX - z * sinX;
+                const z1 = y * sinX + z * cosX;
+
+                y = y1;
+                z = z1;
+
+                const cosY = Math.cos(ay);
+                const sinY = Math.sin(ay);
+
+                const x1 = x * cosY + z * sinY;
+                const z2 = -x * sinY + z * cosY;
+
+                x = x1;
+                z = z2;
+
+                const cosZ = Math.cos(az);
+                const sinZ = Math.sin(az);
+
+                const x2 = x * cosZ - y * sinZ;
+                const y2 = x * sinZ + y * cosZ;
+
+                return { x: x2, y: y2, z: z2 };
+            }
+
+            function project(point, centerX, centerY, scale) {
+                const camera = 4.5;
+                const perspective = camera / (camera - point.z);
 
                 return {
-                    x: width / 2 +
-                        x * width * 0.8 * perspective +
-                        driftX,
-
-                    y: horizon +
-                        y * height * 0.65 * perspective +
-                        driftY,
-
-                    scale: perspective
+                    x: centerX + point.x * scale * perspective,
+                    y: centerY + point.y * scale * perspective,
+                    z: point.z
                 };
             }
 
-            function drawGrid(time) {
-                const horizon = height * 0.48;
-                const driftX = pointer.x * 20;
-                const driftY = pointer.y * 10;
+            function drawLine(a, b, alpha, lineWidth = 1) {
+                ctx.beginPath();
+                ctx.moveTo(a.x, a.y);
+                ctx.lineTo(b.x, b.y);
 
-                ctx.save();
-                ctx.lineWidth = 1;
+                ctx.strokeStyle =
+                    `rgba(190, 137, 255, ${alpha})`;
 
-                /* Moving horizontal perspective grid */
-                for (let i = 0; i < 30; i++) {
-                    const progress =
-                        (i / 30 + (time * 0.00009) % 1);
-
-                    const p = progress * progress;
-
-                    const y =
-                        horizon + p * height * 0.75 + driftY;
-
-                    if (y > height + 5) continue;
-
-                    const alpha = Math.min(
-                        0.32,
-                        0.04 + p * 0.22
-                    );
-
-                    ctx.strokeStyle =
-                        `rgba(0, 170, 255, ${alpha})`;
-
-                    ctx.beginPath();
-                    ctx.moveTo(-width * 0.2 + driftX, y);
-                    ctx.lineTo(width * 1.2 + driftX, y);
-                    ctx.stroke();
-                }
-
-                /* Perspective lines converging at the horizon */
-                for (let i = -20; i <= 20; i++) {
-                    const bottomX =
-                        width / 2 + i * width / 20 + driftX;
-
-                    const topX =
-                        width / 2 + i * width / 80 + driftX * 0.2;
-
-                    ctx.strokeStyle =
-                        `rgba(0, 190, 255, ${
-                            0.07 + Math.abs(i) * 0.004
-                        })`;
-
-                    ctx.beginPath();
-                    ctx.moveTo(topX, horizon + driftY);
-                    ctx.lineTo(bottomX, height * 1.15);
-                    ctx.stroke();
-                }
-
-                /* Blue glow along the horizon */
-                const glow = ctx.createLinearGradient(
-                    0,
-                    horizon - 45,
-                    0,
-                    horizon + 100
-                );
-
-                glow.addColorStop(
-                    0,
-                    "rgba(0, 150, 255, 0)"
-                );
-
-                glow.addColorStop(
-                    0.45,
-                    "rgba(0, 150, 255, 0.09)"
-                );
-
-                glow.addColorStop(
-                    1,
-                    "rgba(0, 150, 255, 0)"
-                );
-
-                ctx.fillStyle = glow;
-                ctx.fillRect(0, horizon - 45, width, 145);
-
-                ctx.restore();
+                ctx.lineWidth = lineWidth;
+                ctx.stroke();
             }
 
-            function drawParticles(time, delta) {
-                for (const p of particles) {
-                    if (!reducedMotion) {
-                        p.z -= p.speed * delta * 0.000035;
+            function drawGridFace(vertices, divisions, alpha) {
+                for (let i = 1; i < divisions; i++) {
+                    const t = i / divisions;
 
-                        if (p.z <= 0.015) {
-                            p.z = 1;
-                            p.x = Math.random() * 2 - 1;
-                            p.y = Math.random() * 2 - 1;
-                        }
-                    }
+                    const top = {
+                        x: vertices[0].x * (1 - t) + vertices[1].x * t,
+                        y: vertices[0].y * (1 - t) + vertices[1].y * t,
+                        z: vertices[0].z * (1 - t) + vertices[1].z * t
+                    };
 
-                    const point = project(
-                        p.x,
-                        p.y,
-                        p.z,
-                        time
+                    const bottom = {
+                        x: vertices[3].x * (1 - t) + vertices[2].x * t,
+                        y: vertices[3].y * (1 - t) + vertices[2].y * t,
+                        z: vertices[3].z * (1 - t) + vertices[2].z * t
+                    };
+
+                    drawLine(
+                        project(top, faceCenterX, faceCenterY, faceScale),
+                        project(bottom, faceCenterX, faceCenterY, faceScale),
+                        alpha
                     );
 
-                    const size = Math.min(
-                        4,
-                        p.size * point.scale * 0.3
-                    );
+                    const left = {
+                        x: vertices[0].x * (1 - t) + vertices[3].x * t,
+                        y: vertices[0].y * (1 - t) + vertices[3].y * t,
+                        z: vertices[0].z * (1 - t) + vertices[3].z * t
+                    };
 
-                    const alpha = Math.max(
-                        0.08,
-                        Math.min(0.8, (1 - p.z) * 0.9)
-                    );
+                    const right = {
+                        x: vertices[1].x * (1 - t) + vertices[2].x * t,
+                        y: vertices[1].y * (1 - t) + vertices[2].y * t,
+                        z: vertices[1].z * (1 - t) + vertices[2].z * t
+                    };
 
+                    drawLine(
+                        project(left, faceCenterX, faceCenterY, faceScale),
+                        project(right, faceCenterX, faceCenterY, faceScale),
+                        alpha
+                    );
+                }
+            }
+
+            let faceCenterX = 0;
+            let faceCenterY = 0;
+            let faceScale = 1;
+
+            function drawGeometry(now) {
+                const mobile = width < 600;
+
+                faceCenterX = width * (mobile ? 0.5 : 0.70);
+                faceCenterY = height * (mobile ? 0.68 : 0.58);
+
+                faceScale = Math.min(
+                    width * (mobile ? 0.29 : 0.19),
+                    height * (mobile ? 0.19 : 0.22),
+                    mobile ? 155 : 220
+                );
+
+                const movement = reduceMotion ? 0 : now * 0.0003;
+
+                const ax =
+                    0.45 + Math.sin(movement * 0.7) * 0.25 +
+                    pointer.y * 0.25;
+
+                const ay =
+                    movement + pointer.x * 0.35;
+
+                const az =
+                    Math.sin(movement * 0.5) * 0.16;
+
+                const s = 1;
+
+                const cube = [
+                    { x: -s, y: -s, z: -s },
+                    { x:  s, y: -s, z: -s },
+                    { x:  s, y:  s, z: -s },
+                    { x: -s, y:  s, z: -s },
+                    { x: -s, y: -s, z:  s },
+                    { x:  s, y: -s, z:  s },
+                    { x:  s, y:  s, z:  s },
+                    { x: -s, y:  s, z:  s }
+                ];
+
+                const edges = [
+                    [0,1], [1,2], [2,3], [3,0],
+                    [4,5], [5,6], [6,7], [7,4],
+                    [0,4], [1,5], [2,6], [3,7]
+                ];
+
+                const rotated = cube.map(point =>
+                    rotatePoint(point, ax, ay, az)
+                );
+
+                const projected = rotated.map(point =>
+                    project(point, faceCenterX, faceCenterY, faceScale)
+                );
+
+                /* Large, soft purple aura */
+                const aura = ctx.createRadialGradient(
+                    faceCenterX, faceCenterY, 4,
+                    faceCenterX, faceCenterY, faceScale * 2.5
+                );
+
+                aura.addColorStop(0, "rgba(121, 43, 255, 0.16)");
+                aura.addColorStop(0.55, "rgba(100, 31, 230, 0.07)");
+                aura.addColorStop(1, "rgba(100, 31, 230, 0)");
+
+                ctx.fillStyle = aura;
+                ctx.fillRect(
+                    faceCenterX - faceScale * 2.5,
+                    faceCenterY - faceScale * 2.5,
+                    faceScale * 5,
+                    faceScale * 5
+                );
+
+                /* Orbiting rings */
+                ctx.save();
+                ctx.translate(faceCenterX, faceCenterY);
+                ctx.rotate(-0.2 + Math.sin(movement) * 0.08);
+
+                for (let i = 0; i < 3; i++) {
                     ctx.beginPath();
 
-                    ctx.arc(
-                        point.x,
-                        point.y,
-                        size,
+                    ctx.ellipse(
+                        0,
+                        0,
+                        faceScale * (1.42 + i * 0.12),
+                        faceScale * (0.72 + i * 0.09),
+                        i * 0.35,
                         0,
                         Math.PI * 2
                     );
 
-                    ctx.fillStyle =
-                        `rgba(80, 220, 255, ${alpha})`;
-
-                    ctx.shadowBlur = 12;
-                    ctx.shadowColor = "#00aaff";
-                    ctx.fill();
-                    ctx.shadowBlur = 0;
-                }
-            }
-
-            function drawLightWaves(time) {
-                ctx.save();
-
-                for (let i = 0; i < 3; i++) {
-                    const y =
-                        height * (0.25 + i * 0.22) +
-                        Math.sin(time * 0.0005 + i * 1.8) * 24;
-
-                    ctx.beginPath();
-
-                    for (let x = 0; x <= width; x += 12) {
-                        const wave =
-                            Math.sin(
-                                x * 0.008 +
-                                time * 0.0007 +
-                                i
-                            ) * 13 +
-                            Math.sin(
-                                x * 0.003 -
-                                time * 0.0004
-                            ) * 16;
-
-                        if (x === 0) {
-                            ctx.moveTo(x, y + wave);
-                        } else {
-                            ctx.lineTo(x, y + wave);
-                        }
-                    }
-
                     ctx.strokeStyle =
-                        `rgba(0, 190, 255, ${
-                            0.035 + i * 0.012
-                        })`;
+                        `rgba(171, 111, 255, ${0.20 - i * 0.045})`;
 
-                    ctx.lineWidth = 1.2;
-                    ctx.s
+                    ctx.lineWidth = 1;
+                    ctx.stroke();
+                }
+
+                ctx.restore();
+
+                /* Main rotating cube */
+                ctx.save();
+                ctx.shadowBlur = 14;
+                ctx.shadowColor = "rgba(160, 85, 255, 0.8)";
+
+                for (const edge of edges) {
+                    drawLine(
+                        projected[edge[0]],
+                        projected[edge[1]],
+                        0.85,
+                        1.35
+                    );
+                }
+
+                ctx.restore();
+
+                /* Intersecting transparent wireframe planes */
+                const planes = [
+                    [
+  
