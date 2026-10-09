@@ -1,834 +1,650 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="google-site-verification"
-        content="sWwOeNicUUC96pjH_v7wr7_TMijOzLxPR-y1oJTFDIao">
-
-  <meta name="monetag"
-        content="579dc59c5b5aaf01068fed0f8b6b17f0">
-
-  <title>David Chimburuoma Odum | CEO &amp; Cybersecurity Analyst</title>
-
-  <meta name="description"
-        content="David Chimburuoma Odum is the CEO and Founder of DCO Cyber Solutions and a Cybersecurity Analyst specializing in Malware Analysis, Digital Forensics, and Cybersecurity Training.">
-
-  <meta name="author" content="David Chimburuoma Odum">
-
-  <link rel="canonical"
-        href="https://davidchimburuomaodum.github.io/">
-
-  <meta name="theme-color" content="#020617">
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      min-height: 100vh;
-      overflow-x: hidden;
-      font-family: Arial, sans-serif;
-      color: #e5e7eb;
-
-      background:
-        radial-gradient(
-          circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-          rgba(37, 99, 235, 0.22),
-          transparent 22%
-        ),
-        radial-gradient(
-          circle at 15% 20%,
-          rgba(14, 165, 233, 0.15),
-          transparent 30%
-        ),
-        linear-gradient(
-          135deg,
-          #020617,
-          #0f172a 50%,
-          #020617
-        );
-
-      perspective: 1400px;
-    }
-
-    .scene {
-      min-height: 100vh;
-      position: relative;
-      overflow: hidden;
-      transform-style: preserve-3d;
-    }
-
-    /* ANIMATED 3D GRID */
-
-    .grid {
-      position: fixed;
-      width: 180vw;
-      height: 180vh;
-      left: -40vw;
-      top: -30vh;
-
-      background-image:
-        linear-gradient(
-          rgba(37, 99, 235, 0.16) 1px,
-          transparent 1px
-        ),
-        linear-gradient(
-          90deg,
-          rgba(37, 99, 235, 0.16) 1px,
-          transparent 1px
-        );
-
-      background-size: 55px 55px;
-
-      transform:
-        perspective(500px)
-        rotateX(62deg)
-        translateZ(-150px)
-        translateY(-40px);
-
-      transform-origin: center;
-      animation: gridMove 12s linear infinite;
-      opacity: 0.38;
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    @keyframes gridMove {
-      0% {
-        background-position: 0 0, 0 0;
-      }
-
-      100% {
-        background-position: 0 55px, 55px 0;
-      }
-    }
-
-    /* FLOATING PARTICLES */
-
-    .particles {
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      z-index: 1;
-    }
-
-    .particle {
-      position: absolute;
-      width: 3px;
-      height: 3px;
-      border-radius: 50%;
-      background: #38bdf8;
-      box-shadow: 0 0 12px #38bdf8;
-      opacity: 0.6;
-
-      animation:
-        floatParticle
-        var(--duration)
-        ease-in-out
-        infinite
-        alternate;
-    }
-
-    .particle:nth-child(1) {
-      left: 10%;
-      top: 20%;
-      --duration: 5s;
-    }
-
-    .particle:nth-child(2) {
-      left: 22%;
-      top: 70%;
-      --duration: 7s;
-    }
-
-    .particle:nth-child(3) {
-      left: 38%;
-      top: 35%;
-      --duration: 6s;
-    }
-
-    .particle:nth-child(4) {
-      left: 55%;
-      top: 75%;
-      --duration: 8s;
-    }
-
-    .particle:nth-child(5) {
-      left: 70%;
-      top: 25%;
-      --duration: 5s;
-    }
-
-    .particle:nth-child(6) {
-      left: 82%;
-      top: 60%;
-      --duration: 7s;
-    }
-
-    .particle:nth-child(7) {
-      left: 90%;
-      top: 15%;
-      --duration: 6s;
-    }
-
-    .particle:nth-child(8) {
-      left: 48%;
-      top: 15%;
-      --duration: 9s;
-    }
-
-    @keyframes floatParticle {
-      from {
-        transform: translate3d(0, 0, 0) scale(1);
-      }
-
-      to {
-        transform: translate3d(35px, -45px, 100px) scale(1.8);
-      }
-    }
-
-    /* MOVING BACKGROUND LIGHT */
-
-    .light {
-      position: fixed;
-      width: 420px;
-      height: 420px;
-      border-radius: 50%;
-
-      background:
-        radial-gradient(
-          circle,
-          rgba(37, 99, 235, 0.22),
-          transparent 68%
-        );
-
-      filter: blur(25px);
-
-      left: calc(var(--mouse-x, 50%) - 210px);
-      top: calc(var(--mouse-y, 50%) - 210px);
-
-      pointer-events: none;
-      z-index: 1;
-    }
-
-    /* HEADER */
-
-    header {
-      position: relative;
-      z-index: 5;
-      text-align: center;
-      padding: 90px 20px 70px;
-
-      background: rgba(2, 6, 23, 0.55);
-      backdrop-filter: blur(12px);
-
-      border-bottom:
-        1px solid rgba(255, 255, 255, 0.08);
-
-      transform:
-        translate3d(
-          var(--header-x, 0px),
-          var(--header-y, 0px),
-          40px
-        );
-
-      transition: transform 0.15s ease-out;
-      transform-style: preserve-3d;
-    }
-
-    header h1 {
-      font-size: 44px;
-      letter-spacing: 2px;
-      color: white;
-
-      text-shadow:
-        0 0 12px rgba(37, 99, 235, 0.5),
-        0 0 35px rgba(37, 99, 235, 0.25);
-
-      transform: translateZ(70px);
-    }
-
-    header .position {
-      margin-top: 14px;
-      font-size: 21px;
-      font-weight: bold;
-      color: #38bdf8;
-      transform: translateZ(55px);
-    }
-
-    header .profession {
-      margin-top: 8px;
-      font-size: 17px;
-      color: #cbd5e1;
-      transform: translateZ(40px);
-    }
-
-    /* MAIN CONTENT */
-
-    main {
-      position: relative;
-      z-index: 5;
-      max-width: 780px;
-      margin: 75px auto;
-      padding: 0 20px;
-      perspective: 1400px;
-    }
-
-    /* 3D ABOUT CARD */
-
-    .about {
-      position: relative;
-      padding: 45px;
-      border-radius: 22px;
-      color: #222;
-
-      background:
-        linear-gradient(
-          145deg,
-          rgba(255, 255, 255, 0.98),
-          rgba(241, 245, 249, 0.94)
-        );
-
-      border:
-        1px solid rgba(255, 255, 255, 0.5);
-
-      box-shadow:
-        0 40px 100px rgba(0, 0, 0, 0.55),
-        0 0 40px rgba(37, 99, 235, 0.12);
-
-      transform-style: preserve-3d;
-
-      transform:
-        rotateX(var(--card-x, 0deg))
-        rotateY(var(--card-y, 0deg))
-        translateZ(60px);
-
-      transition:
-        transform 0.12s ease-out,
-        box-shadow 0.3s ease;
-
-      will-change: transform;
-    }
-
-    .about::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: 22px;
-
-      background:
-        linear-gradient(
-          125deg,
-          rgba(255, 255, 255, 0.35),
-          transparent 35%,
-          transparent 65%,
-          rgba(37, 99, 235, 0.08)
-        );
-
-      pointer-events: none;
-      transform: translateZ(1px);
-    }
-
-    .about::after {
-      content: "";
-      position: absolute;
-      left: 15px;
-      right: 15px;
-      bottom: -15px;
-      height: 20px;
-      border-radius: 50%;
-      background: rgba(0, 0, 0, 0.3);
-      filter: blur(15px);
-      z-index: -1;
-    }
-
-    .about h2 {
-      color: #111827;
-      font-size: 29px;
-      margin-bottom: 20px;
-      transform: translateZ(75px);
-    }
-
-    .about > p {
-      margin-bottom: 20px;
-      line-height: 1.7;
-      transform: translateZ(45px);
-    }
-
-    /* DCO CYBER SOLUTIONS */
-
-    .company {
-      margin: 32px 0;
-      padding: 22px;
-      border-left: 5px solid #2563eb;
-      border-radius: 12px;
-
-      background:
-        linear-gradient(
-          135deg,
-          #f8fafc,
-          #e2e8f0
-        );
-
-      box-shadow:
-        0 15px 30px rgba(15, 23, 42, 0.16);
-
-      transform: translateZ(80px);
-      transform-style: preserve-3d;
-      transition: transform 0.3s ease;
-    }
-
-    .company:hover {
-      transform:
-        translateZ(105px)
-        translateY(-5px);
-    }
-
-    .company h3 {
-      color: #1d4ed8;
-      font-size: 21px;
-      margin-bottom: 5px;
-      transform: translateZ(25px);
-    }
-
-    .company p {
-      margin: 0;
-      line-height: 1.6;
-      transform: translateZ(20px);
-    }
-
-    /* ANIMATED ARROW */
-
-    .arrow {
-      text-align: center;
-      font-size: 55px;
-      font-weight: bold;
-      color: #2563eb;
-      margin: 0 0 10px;
-
-      text-shadow:
-        0 0 15px rgba(37, 99, 235, 0.65);
-
-      transform: translateZ(80px);
-      animation: arrowFloat 1.5s ease-in-out infinite;
-    }
-
-    @keyframes arrowFloat {
-      0%, 100% {
-        transform: translateY(0) translateZ(80px);
-      }
-
-      50% {
-        transform: translateY(12px) translateZ(80px);
-      }
-    }
-
-    /* BUTTONS */
-
-    .buttons {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 18px;
-      transform-style: preserve-3d;
-      transform: translateZ(90px);
-    }
-
-    .buttons a {
-      position: relative;
-      display: inline-block;
-      padding: 15px 25px;
-      border-radius: 10px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      text-align: center;
-      line-height: 1.4;
-
-      transform-style: preserve-3d;
-
-      transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
-    }
-
-    .buttons a::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: 10px;
-      background: rgba(255, 255, 255, 0.12);
-      transform: translateZ(8px);
-      pointer-events: none;
-    }
-
-    .buttons a::after {
-      content: "";
-      position: absolute;
-      left: 7px;
-      right: 7px;
-      bottom: -9px;
-      height: 10px;
-      border-radius: 0 0 10px 10px;
-      background: rgba(0, 0, 0, 0.35);
-      filter: blur(3px);
-      transform: translateZ(-10px);
-    }
-
-    .buttons a:hover {
-      transform:
-        translateY(-8px)
-        translateZ(25px)
-        rotateX(4deg);
-    }
-
-    .buttons a:active {
-      transform:
-        translateY(2px)
-        translateZ(10px);
-    }
-
-    .website-btn {
-      background:
-        linear-gradient(
-          135deg,
-          #06b6d4,
-          #0284c7
-        );
-
-      box-shadow:
-        0 12px 30px rgba(6, 182, 212, 0.4);
-    }
-
-    .github-btn {
-      background:
-        linear-gradient(
-          135deg,
-          #2563eb,
-          #1d4ed8
-        );
-
-      box-shadow:
-        0 12px 30px rgba(37, 99, 235, 0.4);
-    }
-
-    /* KEYBOARD ACCESSIBILITY */
-
-    .buttons a:focus-visible {
-      outline: 3px solid #0f172a;
-      outline-offset: 5px;
-    }
-
-    /* FOOTER */
-
-    footer {
-      position: relative;
-      z-index: 5;
-      margin-top: 80px;
-      padding: 28px 20px;
-      text-align: center;
-      line-height: 1.7;
-      color: #cbd5e1;
-
-      background: rgba(2, 6, 23, 0.85);
-
-      border-top:
-        1px solid rgba(255, 255, 255, 0.08);
-
-      transform: translateZ(30px);
-    }
-
-    /* MOBILE RESPONSIVENESS */
-
-    @media (max-width: 600px) {
-      header {
-        padding: 65px 20px;
-      }
-
-      header h1 {
-        font-size: 30px;
-        letter-spacing: 1px;
-      }
-
-      header .position {
-        font-size: 18px;
-      }
-
-      header .profession {
-        font-size: 15px;
-        line-height: 1.7;
-      }
-
-      main {
-        margin-top: 45px;
-      }
-
-      .about {
-        padding: 28px 22px;
-        transform: translateZ(20px) !important;
-      }
-
-      .about h2 {
-        font-size: 25px;
-      }
-
-      .company {
-        padding: 18px;
-      }
-
-      .buttons {
-        flex-direction: column;
-      }
-
-      .buttons a {
-        width: 100%;
-      }
-
-      .grid {
-        opacity: 0.22;
-      }
-
-      .light {
-        width: 250px;
-        height: 250px;
-      }
-    }
-
-    /* REDUCE MOTION FOR ACCESSIBILITY */
-
-    @media (prefers-reduced-motion: reduce) {
-      *,
-      *::before,
-      *::after {
-        animation: none !important;
-        transition: none !important;
-        scroll-behavior: auto !important;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>David Chimburuoma Odum | Cybersecurity & Technology</title>
+
+    <meta name="description" content="Official portfolio of David Chimburuoma Odum, cybersecurity analyst, CEO and technology leader specializing in malware analysis, digital forensics and cybersecurity.">
+
+    <meta name="google-site-verification" content="sWwOeNicUUC96pjH_v7wr7_TMijOzLxPR-y1oJTFDIao">
+
+    <meta name="monetag" content="579dc59c5b5aaf01068fed0f8b6b17f0">
+
+    <meta name="theme-color" content="#030712">
+    <link rel="canonical" href="https://davidchimburuomaodum.github.io/">
+
+    <style>
+        :root {
+            --bg: #030712;
+            --blue: #00aaff;
+            --cyan: #00f0ff;
+            --text: #f4f8ff;
+            --muted: #a4b4ca;
+            --panel: rgba(9, 21, 43, 0.72);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            overflow-x: hidden;
+            background: var(--bg);
+            color: var(--text);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+        }
+
+        /* LIVE ANIMATED BACKGROUND */
+        #bg3d {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .ambient-light {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            background:
+                radial-gradient(
+                    ellipse at 50% 38%,
+                    rgba(0, 115, 255, 0.15),
+                    transparent 48%
+                ),
+                radial-gradient(
+                    ellipse at 10% 80%,
+                    rgba(0, 240, 255, 0.07),
+                    transparent 35%
+                );
+            animation: ambientPulse 8s ease-in-out infinite alternate;
+        }
+
+        @keyframes ambientPulse {
+            from {
+                opacity: 0.5;
+                transform: scale(1);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1.08);
+            }
+        }
+
+        /* SITE CONTENT */
+        .site {
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            width: 100%;
+            padding: 22px 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(0, 200, 255, 0.16);
+            background: rgba(3, 7, 18, 0.52);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .brand {
+            color: white;
+            font-weight: 800;
+            font-size: 1.15rem;
+            letter-spacing: 1px;
+            text-decoration: none;
+        }
+
+        .brand span {
+            color: var(--cyan);
+        }
+
+        .status {
+            color: #8deeff;
+            font-size: 0.78rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .hero {
+            min-height: 83vh;
+            padding: 90px 7% 75px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            width: 100%;
+            max-width: 950px;
+            animation: enter 1.1s ease both;
+        }
+
+        @keyframes enter {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .eyebrow {
+            display: inline-block;
+            margin-bottom: 25px;
+            padding: 7px 15px;
+            border: 1px solid rgba(0, 220, 255, 0.35);
+            border-radius: 30px;
+            color: #9aefff;
+            background: rgba(0, 170, 255, 0.08);
+            font-size: 0.78rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: clamp(2.4rem, 6.4vw, 5.3rem);
+            line-height: 1.12;
+            letter-spacing: -2px;
+            margin-bottom: 22px;
+            text-shadow: 0 0 35px rgba(0, 145, 255, 0.18);
+        }
+
+        h1 span {
+            color: var(--cyan);
+            background: linear-gradient(90deg, #00aaff, #00f0ff, #83aaff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: #d3e5f8;
+            font-size: clamp(1rem, 2.3vw, 1.35rem);
+            margin-bottom: 18px;
+        }
+
+        .description {
+            max-width: 720px;
+            margin: 0 auto;
+            color: var(--muted);
+            font-size: 1rem;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            margin-top: 35px;
+        }
+
+        .primary-button {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 54px;
+            padding: 14px 30px;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            border-radius: 8px;
+            background: linear-gradient(110deg, #007bff, #00c8ff);
+            color: #00101e;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1rem;
+            box-shadow: 0 0 25px rgba(0, 170, 255, 0.25);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .primary-button:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 38px rgba(0, 210, 255, 0.48);
+        }
+
+        .section {
+            padding: 65px 7%;
+        }
+
+        .section-heading {
+            text-align: center;
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            margin-bottom: 14px;
+        }
+
+        .section-heading span {
+            color: var(--cyan);
+        }
+
+        .section-intro {
+            max-width: 680px;
+            margin: 0 auto 35px;
+            color: var(--muted);
+            text-align: center;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .card {
+            position: relative;
+            overflow: hidden;
+            padding: 27px;
+            border: 1px solid rgba(0, 190, 255, 0.2);
+            border-radius: 14px;
+            background: var(--panel);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -120%;
+            width: 80%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            border-color: rgba(0, 230, 255, 0.65);
+        }
+
+        .card:hover::before {
+            left: 120%;
+        }
+
+        .card-number {
+            color: var(--cyan);
+            font-size: 0.85rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .card h3 {
+            margin: 12px 0;
+            font-size: 1.2rem;
+        }
+
+        .card p {
+            color: var(--muted);
+            font-size: 0.94rem;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 35px;
+            border: 1px solid rgba(0, 190, 255, 0.18);
+            border-radius: 14px;
+            background: rgba(7, 16, 34, 0.76);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .about p {
+            margin-bottom: 15px;
+            color: var(--muted);
+        }
+
+        .about p:last-child {
+            margin-bottom: 0;
+        }
+
+        footer {
+            padding: 28px 7%;
+            text-align: center;
+            border-top: 1px solid rgba(0, 200, 255, 0.16);
+            background: rgba(3, 7, 18, 0.7);
+            color: #8397b1;
+            font-size: 0.85rem;
+        }
+
+        footer span {
+            color: var(--cyan);
+        }
+
+        @media (max-width: 800px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                padding: 24px;
+            }
+
+            .hero {
+                min-height: 75vh;
+                padding-top: 70px;
+                padding-bottom: 60px;
+            }
+
+            h1 {
+                letter-spacing: -1px;
+            }
+
+            .status {
+                font-size: 0.65rem;
+                letter-spacing: 0.8px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <div class="scene">
 
-    <!-- ANIMATED 3D GRID -->
-    <div class="grid" aria-hidden="true"></div>
+    <canvas id="bg3d" aria-hidden="true"></canvas>
+    <div class="ambient-light" aria-hidden="true"></div>
 
-    <!-- MOVING LIGHT -->
-    <div class="light" aria-hidden="true"></div>
+    <div class="site">
 
-    <!-- FLOATING PARTICLES -->
-    <div class="particles" aria-hidden="true">
-      <span class="particle"></span>
-      <span class="particle"></span>
-      <span class="particle"></span>
-      <span class="particle"></span>
-      <span class="particle"></span>
-      <span class="particle"></span>
-      <span class="particle"></span>
-      <span class="particle"></span>
+        <header>
+            <a class="brand" href="#home">DCO <span>CYBER SOLUTIONS</span></a>
+            <div class="status">Cybersecurity &amp; Technology</div>
+        </header>
+
+        <main>
+            <section class="hero" id="home">
+                <div class="hero-content">
+                    <div class="eyebrow">Cybersecurity • Digital Innovation</div>
+
+                    <h1>
+                        David Chimburuoma<br>
+                        <span>Odum</span>
+                    </h1>
+
+                    <p class="subtitle">
+                        Cybersecurity Analyst, CEO &amp; Technology Leader
+                    </p>
+
+                    <p class="description">
+                        Specializing in malware analysis, digital forensics,
+                        cybersecurity, and technology-driven solutions.
+                        Exploring threats, investigating incidents, and
+                        helping build a safer digital environment.
+                    </p>
+
+                    <div class="actions">
+                        <a
+                            class="primary-button"
+                            href="https://david-portfolio-swart-five.vercel.app"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Contact &amp; Explore
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="expertise">
+                <h2 class="section-heading">Areas of <span>Expertise</span></h2>
+
+                <p class="section-intro">
+                    Combining cybersecurity knowledge, investigative
+                    thinking, and technology leadership to address digital
+                    security challenges.
+                </p>
+
+                <div class="cards">
+                    <article class="card">
+                        <div class="card-number">01 / SECURITY</div>
+                        <h3>Cybersecurity</h3>
+                        <p>
+                            Understanding cyber threats, security risks,
+                            defensive practices, and strategies for improving
+                            digital security.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-number">02 / INVESTIGATION</div>
+                        <h3>Malware Analysis</h3>
+                        <p>
+                            Examining suspicious software and malicious
+                            behavior to better understand threats and
+                            support security investigations.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-number">03 / FORENSICS</div>
+                        <h3>Digital Forensics</h3>
+                        <p>
+                            Exploring digital evidence, incident investigation,
+                            and forensic approaches to understanding
+                            cyber-related events.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section" id="about">
+                <h2 class="section-heading">About <span>Me</span></h2>
+
+                <p class="section-intro">
+                    Security knowledge meets technical innovation.
+                </p>
+
+                <div class="about">
+                    <p>
+                        I am David Chimburuoma Odum, a cybersecurity analyst,
+                        CEO, and technology leader with an academic background
+                        in Criminology and Security Studies.
+                    </p>
+
+                    <p>
+                        My interests include malware analysis, digital
+                        forensics, cyber incident investigation, and the
+                        behavioral aspects of cybercrime. My background
+                        combines technical security interests with an
+                        investigative understanding of security challenges.
+                    </p>
+
+                    <p>
+                        As CEO of DCO Cyber Solutions, my focus is on
+                        technology, cybersecurity awareness, innovative
+                        solutions, and strengthening digital security.
+                        I value continuous learning, practical research,
+                        hands-on development, and real-world security
+                        challenges.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            &copy; <span id="year"></span> David Chimburuoma Odum.
+            All rights reserved.
+        </footer>
+
     </div>
 
-    <!-- HEADER -->
-    <header>
-      <h1>David Chimburuoma Odum</h1>
+    <script>
+        (() => {
+            const canvas = document.getElementById("bg3d");
+            const ctx = canvas.getContext("2d", { alpha: true });
 
-      <p class="position">
-        CEO &amp; Founder, DCO Cyber Solutions
-      </p>
+            if (!ctx) return;
 
-      <p class="profession">
-        Cybersecurity Analyst |
-        Malware Analysis |
-        Digital Forensics
-      </p>
-    </header>
+            const reducedMotion = window.matchMedia(
+                "(prefers-reduced-motion: reduce)"
+            ).matches;
 
-    <!-- MAIN CONTENT -->
-    <main>
-      <section class="about" id="aboutCard" aria-labelledby="aboutTitle">
+            let width = 0;
+            let height = 0;
+            let dpr = 1;
+            let animationId;
+            let lastTime = 0;
+            let elapsed = 0;
 
-        <h2 id="aboutTitle">About Me</h2>
+            const pointer = {
+                x: 0,
+                y: 0,
+                targetX: 0,
+                targetY: 0
+            };
 
-        <p>
-          I'm David Chimburuoma Odum, CEO &amp; Founder
-          of DCO Cyber Solutions and a Cybersecurity
-          Analyst with a strong interest in Malware
-          Analysis and Digital Forensics.
-        </p>
+            let particles = [];
 
-        <p>
-          My journey in cybersecurity is driven by
-          curiosity, continuous learning, and a desire
-          to understand how technology and security
-          work together.
-        </p>
+            function resize() {
+                width = window.innerWidth;
+                height = window.innerHeight;
+                dpr = Math.min(window.devicePixelRatio || 1, 1.5);
 
-        <p>
-          I enjoy learning new things, developing
-          myself, exploring cybersecurity, and gaining
-          practical knowledge that can help me grow
-          both personally and professionally.
-        </p>
+                canvas.width = Math.round(width * dpr);
+                canvas.height = Math.round(height * dpr);
+                canvas.style.width = width + "px";
+                canvas.style.height = height + "px";
 
-        <p>
-          I believe that growth comes from consistency,
-          discipline, continuous learning, and the
-          willingness to keep improving.
-        </p>
+                ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-        <!-- COMPANY INFORMATION -->
-        <div class="company">
-          <h3>DCO Cyber Solutions</h3>
+                const count = Math.min(
+                    110,
+                    Math.max(35, Math.floor(width * height / 11000))
+                );
 
-          <p>
-            DCO Cyber Solutions provides professional
-            services focused on Malware Analysis,
-            Digital Forensics, and Cybersecurity Training.
-          </p>
-        </div>
+                particles = Array.from({ length: count }, () => ({
+                    x: Math.random() * 2 - 1,
+                    y: Math.random() * 2 - 1,
+                    z: Math.random(),
+                    speed: 0.025 + Math.random() * 0.07,
+                    size: 0.5 + Math.random() * 1.8
+                }));
+            }
 
-        <p>
-          Click on a button below to explore my
-          professional work, portfolio, and
-          DCO Cyber Solutions.
-        </p>
+            function project(x, y, z, time) {
+                const horizon = height * 0.48;
+                const depth = 0.12 + z * 1.5;
+                const perspective = 1 / depth;
 
-        <div class="arrow" aria-hidden="true">↓</div>
+                const driftX = pointer.x * 24 + Math.sin(time * 0.00025) * 12;
+                const driftY = pointer.y * 12;
 
-        <!-- BOTH BUTTONS OPEN THE SAME VERCEL WEBSITE -->
-        <div class="buttons">
+                return {
+                    x: width / 2 + x * width * 0.8 * perspective + driftX,
+                    y: horizon + y * height * 0.65 * perspective + driftY,
+                    scale: perspective
+                };
+            }
 
-          <a
-            class="website-btn"
-            href="https://david-portfolio-swart-five.vercel.app"
-            target="_blank"
-            rel="noopener noreferrer">
+            function drawGrid(time) {
+                const horizon = height * 0.48;
+                const driftX = pointer.x * 20;
+                const driftY = pointer.y * 10;
 
-            Explore My Portfolio
-          </a>
+                ctx.save();
+                ctx.lineWidth = 1;
 
-          <a
-            class="github-btn"
-            href="https://david-portfolio-swart-five.vercel.app"
-            target="_blank"
-            rel="noopener noreferrer">
+                /* Horizontal perspective grid */
+                for (let i = 0; i < 30; i++) {
+                    const progress = (i / 30 + (time * 0.00009) % 1);
+                    const p = progress * progress;
+                    const y = horizon + p * height * 0.75 + driftY;
 
-            Contact &amp; Explore
-          </a>
+                    if (y > height + 5) continue;
 
-        </div>
-      </section>
-    </main>
+                    const alpha = Math.min(0.32, 0.04 + p * 0.22);
 
-    <!-- FOOTER -->
-    <footer>
-      &copy; 2026 David Chimburuoma Odum |
-      CEO &amp; Founder, DCO Cyber Solutions
-    </footer>
+                    ctx.strokeStyle = `rgba(0, 170, 255, ${alpha})`;
+                    ctx.beginPath();
+                    ctx.moveTo(-width * 0.2 + driftX, y);
+                    ctx.lineTo(width * 1.2 + driftX, y);
+                    ctx.stroke();
+                }
 
-  </div>
+                /* Vertical lines converge toward a vanishing point */
+                for (let i = -20; i <= 20; i++) {
+                    const bottomX = width / 2 + i * width / 20 + driftX;
+                    const topX = width / 2 + i * width / 80 + driftX * 0.2;
 
-  <!-- LIVE 3D JAVASCRIPT -->
-  <script>
-    const root = document.documentElement;
-    const card = document.getElementById("aboutCard");
-    const motionPreference = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    );
+                    ctx.strokeStyle =
+                        `rgba(0, 190, 255, ${0.07 + Math.abs(i) * 0.004})`;
 
-    let targetX = 50;
-    let targetY = 50;
-    let currentX = 50;
-    let currentY = 50;
-    let animationFrame;
+                    ctx.beginPath();
+                    ctx.moveTo(topX, horizon + driftY);
+                    ctx.lineTo(bottomX, height * 1.15);
+                    ctx.stroke();
+                }
 
-    function updatePointerPosition(x, y) {
-      targetX = (x / window.innerWidth) * 100;
-      targetY = (y / window.innerHeight) * 100;
-    }
+                /* Horizon glow */
+                const glow = ctx.createLinearGradient(
+                    0, horizon - 45, 0, horizon + 100
+                );
 
-    /* DESKTOP POINTER MOVEMENT */
-    document.addEventListener("pointermove", function(event) {
-      if (event.pointerType === "mouse") {
-        updatePointerPosition(event.clientX, event.clientY);
-      }
-    });
+                glow.addColorStop(0, "rgba(0, 150, 255, 0)");
+                glow.addColorStop(0.45, "rgba(0, 150, 255, 0.09)");
+                glow.addColorStop(1, "rgba(0, 150, 255, 0)");
 
-    /* 3D ANIMATION */
-    function animate3D() {
-      if (motionPreference.matches) {
-        return;
-      }
+                ctx.fillStyle = glow;
+                ctx.fillRect(0, horizon - 45, width, 145);
 
-      currentX += (targetX - currentX) * 0.06;
-      currentY += (targetY - currentY) * 0.06;
+                ctx.restore();
+            }
 
-      root.style.setProperty("--mouse-x", currentX + "%");
-      root.style.setProperty("--mouse-y", currentY + "%");
+            function drawParticles(time, delta) {
+                for (const p of particles) {
+                    if (!reducedMotion) {
+                        p.z -= p.speed * delta * 0.000035;
 
-      const rotateY = (currentX - 50) * 0.10;
-      const rotateX = (50 - currentY) * 0.08;
+                        if (p.z <= 0.015) {
+                            p.z = 1;
+                            p.x = Math.random() * 2 - 1;
+                            p.y = Math.random() * 2 - 1;
+                        }
+                    }
 
-      root.style.setProperty("--card-x", rotateX + "deg");
-      root.style.setProperty("--card-y", rotateY + "deg");
+                    const point = project(p.x, p.y, p.z, time);
+                    const size = Math.min(4, p.size * point.scale * 0.3);
+                    const alpha = Math.max(
+                        0.08,
+                        Math.min(0.8, (1 - p.z) * 0.9)
+                    );
 
-      const headerX = (currentX - 50) * 0.08;
-      const headerY = (currentY - 50) * 0.05;
+                    ctx.beginPath();
+                    ctx.arc(point.x, point.y, size, 0, Math.PI * 2);
 
-      root.style.setProperty("--header-x", headerX + "px");
-      root.style.setProperty("--header-y", headerY + "px");
-
-      animationFrame = requestAnimationFrame(animate3D);
-    }
-
-    /* MOBILE AUTOMATIC MOVEMENT */
-    if (
-      window.matchMedia("(pointer: coarse)").matches &&
-      !motionPreference.matches
-    ) {
-      let angle = 0;
-
-      function mobile3D() {
-        if (motionPreference.matches) {
-          return;
-        }
-
-        angle += 0.015;
-
-        targetX = 50 + Math.sin(angle) * 12;
-        targetY = 50 + Math.cos(angle) * 8;
-
-        requestAnimationFrame(mobile3D);
-      }
-
-      mobile3D();
-    }
-
-    animate3D();
-
-    /* STOP ANIMATION WHEN REDUCED MOTION IS PREFERRED */
-    motionPreference.addEventListener("change", function(event) {
-      if (event.matches) {
-        cancelAnimationFrame(animationFrame);
-
-        root.style.setProperty("--card-x", "0deg");
-        root.style.setProperty("--card-y", "0deg");
-        root.style.setProperty("--header-x", "0px");
-        root.style.setProperty("--header-y", "0px");
-      } else {
-        animate3D();
-      }
-    });
-  </script>
-</body>
-</html>
+                    ctx.fillStyle = `rgba(80, 220, 255, ${alpha})`;
+                    ctx.shadowBlur = 12;
+                    ctx.shadowColor = "#00aaff";
+                    ctx.fill();
+                    ctx.shadowBlur = 0;
+  
