@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,22 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>David Chimburuoma Odum | Cybersecurity Analyst</title>
-
     <meta name="description" content="Official portfolio of David Chimburuoma Odum, cybersecurity analyst specializing in malware analysis, digital forensics, security research, and cybersecurity solutions. Discover DCO Cyber Labs, created by DCO CYBER SOLUTIONS.">
-
-    <meta name="google-site-verification" content="sWwOeNicUUC96pjH_v7wr7_TMijOzLxPR-y1oJTFDIao">
+    <meta name="google-site-verification" content="bA-ecJvmFD1OLvBoCRPPNDDLIgR8ooWpTBaPWgEusUs" />
     <meta name="monetag" content="579dc59c5b5aaf01068fed0f8b6b17f0">
     <meta name="theme-color" content="#08040f">
-
     <link rel="canonical" href="https://davidchimburuomaodum.github.io/">
 
     <style>
         :root {
-            --bg: #08040f;
+            --bg: #060711;
             --purple: #a970ff;
-            --violet: #7c3cff;
+            --blue: #42d9ff;
             --text: #f8f3ff;
-            --muted: #aaa0bd;
+            --muted: #aaa9c5;
         }
 
         * {
@@ -43,6 +39,8 @@
             line-height: 1.7;
         }
 
+        /* LIVE CYBERSECURITY BACKGROUND */
+
         #bg3d {
             position: fixed;
             inset: 0;
@@ -58,22 +56,35 @@
             z-index: 0;
             pointer-events: none;
             background:
-                radial-gradient(
-                    ellipse at 58% 60%,
-                    rgba(105, 27, 255, 0.23),
-                    transparent 43%
-                ),
-                radial-gradient(
-                    ellipse at 15% 20%,
-                    rgba(85, 35, 170, 0.10),
-                    transparent 38%
-                );
-            animation: glowPulse 6s ease-in-out infinite alternate;
+                radial-gradient(ellipse at 15% 25%, rgba(83, 40, 220, .20), transparent 40%),
+                radial-gradient(ellipse at 85% 45%, rgba(0, 175, 255, .11), transparent 38%),
+                radial-gradient(ellipse at 50% 100%, rgba(116, 38, 255, .15), transparent 50%);
+            animation: atmosphere 9s ease-in-out infinite alternate;
         }
 
-        @keyframes glowPulse {
-            from { opacity: 0.55; }
-            to { opacity: 1; }
+        .scan-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            opacity: .12;
+            background: repeating-linear-gradient(
+                to bottom,
+                transparent 0,
+                transparent 3px,
+                rgba(120, 150, 255, .08) 4px
+            );
+        }
+
+        @keyframes atmosphere {
+            0% {
+                opacity: .55;
+                transform: scale(1);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1.06);
+            }
         }
 
         .site {
@@ -81,52 +92,63 @@
             z-index: 1;
         }
 
-        /* HEADER */
-
         header {
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 15px;
             padding: 22px 7%;
-            border-bottom: 1px solid rgba(190, 140, 255, 0.20);
-            background: rgba(8, 4, 15, 0.70);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(169, 112, 255, .23);
+            background: rgba(6, 7, 17, .66);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
         }
 
         .brand {
             color: #fff;
-            font-weight: 800;
-            font-size: 1.15rem;
-            letter-spacing: 1px;
+            font-weight: 900;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
             text-decoration: none;
-            white-space: nowrap;
         }
 
         .brand span,
         .footer-brand span {
             color: #bd91ff;
+            text-shadow: 0 0 16px rgba(169, 112, 255, .9);
         }
 
         .status {
-            color: #cbb0ff;
-            font-size: 0.75rem;
-            letter-spacing: 1.4px;
+            color: #b6dfff;
+            font-size: .72rem;
+            letter-spacing: 1.6px;
             text-align: right;
             text-transform: uppercase;
         }
 
-        /* HERO */
+        .status::before {
+            content: "";
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            margin-right: 9px;
+            border-radius: 50%;
+            background: #47ffb0;
+            box-shadow: 0 0 12px #47ffb0;
+            animation: livePulse 1.5s infinite;
+        }
+
+        @keyframes livePulse {
+            50% { opacity: .35; }
+        }
 
         .hero {
             min-height: 88vh;
-            padding: 75px 7% 35px;
+            padding: 75px 7% 45px;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            position: relative;
         }
 
         .hero-content {
@@ -138,7 +160,7 @@
         @keyframes enter {
             from {
                 opacity: 0;
-                transform: translateY(24px);
+                transform: translateY(28px);
             }
             to {
                 opacity: 1;
@@ -149,12 +171,13 @@
         .eyebrow {
             display: inline-block;
             margin-bottom: 24px;
-            padding: 7px 15px;
-            border: 1px solid rgba(190, 135, 255, 0.50);
+            padding: 8px 16px;
+            border: 1px solid rgba(157, 120, 255, .55);
             border-radius: 30px;
             color: #d4b7ff;
-            background: rgba(111, 49, 220, 0.15);
-            font-size: 0.75rem;
+            background: rgba(81, 42, 155, .20);
+            box-shadow: 0 0 25px rgba(115, 60, 255, .12);
+            font-size: .72rem;
             font-weight: bold;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -165,21 +188,22 @@
             font-size: clamp(2.5rem, 7vw, 5.4rem);
             line-height: 1.12;
             letter-spacing: -2px;
-            text-shadow: 0 0 35px rgba(151, 83, 255, 0.28);
+            text-shadow: 0 0 35px rgba(151, 83, 255, .35);
         }
 
         h1 span,
         .platform-card h2 span {
             color: #c49aff;
-            background: linear-gradient(
-                90deg,
-                #a36bff,
-                #e1c5ff,
-                #9760ff
-            );
+            background: linear-gradient(90deg, #8d6aff, #f1d9ff, #51dcff, #a36bff);
+            background-size: 300% auto;
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
+            animation: gradientFlow 7s linear infinite;
+        }
+
+        @keyframes gradientFlow {
+            to { background-position: 300% center; }
         }
 
         .subtitle {
@@ -198,7 +222,7 @@
         .actions {
             display: flex;
             justify-content: center;
-            margin-top: 30px;
+            margin-top: 32px;
         }
 
         .primary-button,
@@ -208,24 +232,22 @@
             align-items: center;
             justify-content: center;
             padding: 14px 30px;
-            border: 1px solid rgba(230, 210, 255, 0.55);
-            border-radius: 8px;
-            background: linear-gradient(110deg, #a16aff, #c5a0ff);
-            color: #170a2c;
+            border: 1px solid rgba(230, 210, 255, .65);
+            border-radius: 9px;
+            background: linear-gradient(110deg, #9561ff, #d0aaff);
+            color: #160829;
             text-decoration: none;
             font-size: 1rem;
             font-weight: 800;
-            box-shadow: 0 0 28px rgba(144, 75, 255, 0.30);
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            box-shadow: 0 0 25px rgba(144, 75, 255, .27);
+            transition: transform .25s ease, box-shadow .25s ease;
         }
 
         .primary-button:hover,
         .platform-button:hover {
             transform: translateY(-4px);
-            box-shadow: 0 0 42px rgba(172, 115, 255, 0.60);
+            box-shadow: 0 0 38px rgba(172, 115, 255, .65);
         }
-
-        /* DCO CYBER LABS */
 
         .platform-section {
             padding: 70px 7%;
@@ -239,24 +261,44 @@
             margin: 0 auto;
             padding: 45px 30px;
             text-align: center;
-            border: 1px solid rgba(169, 112, 255, 0.38);
+            border: 1px solid rgba(125, 112, 255, .40);
             border-radius: 18px;
             background: linear-gradient(
                 135deg,
-                rgba(124, 60, 255, 0.15),
-                rgba(20, 10, 35, 0.94)
+                rgba(50, 24, 100, .58),
+                rgba(8, 11, 29, .88)
             );
-            box-shadow: 0 0 40px rgba(124, 60, 255, 0.12);
+            box-shadow:
+                0 0 40px rgba(124, 60, 255, .13),
+                inset 0 0 35px rgba(77, 85, 255, .04);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .platform-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 70%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #72e5ff, #c49aff, transparent);
+            animation: cardScan 6s ease-in-out infinite;
+        }
+
+        @keyframes cardScan {
+            0%, 15% { left: -100%; }
+            75%, 100% { left: 130%; }
         }
 
         .platform-label {
             display: inline-block;
             margin-bottom: 14px;
             padding: 6px 13px;
-            border: 1px solid rgba(190, 135, 255, 0.35);
+            border: 1px solid rgba(190, 135, 255, .35);
             border-radius: 30px;
             color: #d4b7ff;
-            font-size: 0.72rem;
+            font-size: .72rem;
             font-weight: 700;
             letter-spacing: 1.8px;
             text-transform: uppercase;
@@ -285,11 +327,17 @@
 
         .feature {
             padding: 8px 13px;
-            border: 1px solid rgba(169, 112, 255, 0.24);
+            border: 1px solid rgba(125, 150, 255, .25);
             border-radius: 8px;
-            background: rgba(124, 60, 255, 0.09);
-            color: #dfcbff;
-            font-size: 0.82rem;
+            background: rgba(124, 60, 255, .10);
+            color: #dfd7ff;
+            font-size: .82rem;
+            transition: border-color .25s ease, background .25s ease;
+        }
+
+        .feature:hover {
+            border-color: rgba(82, 220, 255, .7);
+            background: rgba(55, 130, 255, .15);
         }
 
         .platform-button {
@@ -300,11 +348,9 @@
         .platform-credit {
             margin-top: 22px;
             color: #b6a5ca;
-            font-size: 0.84rem;
-            letter-spacing: 0.5px;
+            font-size: .84rem;
+            letter-spacing: .5px;
         }
-
-        /* HERO BOTTOM LINE */
 
         .bottom-note {
             width: 86%;
@@ -315,9 +361,9 @@
             align-items: center;
             justify-content: space-between;
             gap: 15px;
-            border-top: 1px solid rgba(193, 151, 255, 0.20);
+            border-top: 1px solid rgba(193, 151, 255, .20);
             color: #a99abb;
-            font-size: 0.7rem;
+            font-size: .7rem;
             letter-spacing: 2px;
             text-transform: uppercase;
         }
@@ -326,15 +372,13 @@
             color: #c4a1ff;
         }
 
-        /* FOOTER */
-
         footer {
             padding: 30px 7%;
             text-align: center;
-            border-top: 1px solid rgba(190, 140, 255, 0.18);
-            background: rgba(8, 4, 15, 0.88);
+            border-top: 1px solid rgba(190, 140, 255, .18);
+            background: rgba(6, 7, 17, .86);
             color: #9386a5;
-            font-size: 0.85rem;
+            font-size: .85rem;
         }
 
         .footer-brand {
@@ -349,32 +393,26 @@
             margin-bottom: 14px;
         }
 
-        /* MOBILE */
-
         @media (max-width: 600px) {
             header {
                 padding: 18px 5%;
             }
 
             .brand {
-                font-size: 0.88rem;
-                letter-spacing: 0;
+                font-size: .9rem;
+                letter-spacing: 1px;
             }
 
             .status {
-                max-width: 130px;
-                font-size: 0.62rem;
-                letter-spacing: 0.7px;
+                max-width: 155px;
+                font-size: .59rem;
+                letter-spacing: .7px;
             }
 
             .hero {
-                min-height: 86vh;
-                padding: 65px 6% 25px;
-                align-items: flex-start;
-            }
-
-            .hero-content {
-                padding-top: 10px;
+                min-height: 84vh;
+                padding: 65px 6% 30px;
+                align-items: center;
             }
 
             h1 {
@@ -383,13 +421,13 @@
             }
 
             .eyebrow {
-                font-size: 0.65rem;
-                letter-spacing: 1.3px;
+                font-size: .63rem;
+                letter-spacing: 1.1px;
             }
 
             .description,
             .platform-description {
-                font-size: 0.93rem;
+                font-size: .93rem;
             }
 
             .primary-button,
@@ -408,16 +446,16 @@
             }
 
             .platform-label {
-                font-size: 0.65rem;
+                font-size: .63rem;
                 letter-spacing: 1px;
             }
 
             .feature {
-                font-size: 0.75rem;
+                font-size: .75rem;
             }
 
             .bottom-note {
-                font-size: 0.58rem;
+                font-size: .58rem;
                 letter-spacing: 1px;
             }
 
@@ -427,19 +465,21 @@
         }
 
         @media (prefers-reduced-motion: reduce) {
-            html {
-                scroll-behavior: auto;
-            }
+            html { scroll-behavior: auto; }
 
             .hero-content,
-            .purple-glow {
-                animation: none;
+            .purple-glow,
+            .status::before,
+            .platform-card::before,
+            h1 span,
+            .platform-card h2 span {
+                animation: none !important;
             }
 
             *,
             *::before,
             *::after {
-                transition-duration: 0.01ms !important;
+                transition-duration: .01ms !important;
             }
         }
     </style>
@@ -448,16 +488,14 @@
 <body>
     <canvas id="bg3d" aria-hidden="true"></canvas>
     <div class="purple-glow" aria-hidden="true"></div>
+    <div class="scan-overlay" aria-hidden="true"></div>
 
     <div class="site">
         <header>
             <a class="brand" href="#home" aria-label="DCO home">
                 DCO<span>.</span>
             </a>
-
-            <div class="status">
-                Cybersecurity &amp; Technology
-            </div>
+            <div class="status">Cybersecurity &amp; Technology</div>
         </header>
 
         <main>
@@ -551,14 +589,11 @@
 
         <footer>
             <div class="footer-brand">DCO<span>.</span></div>
-
             <p class="footer-tagline">
                 Cybersecurity · Investigation · Innovation
             </p>
-
             <p class="copyright">
-                &copy; <span id="year"></span>
-                David Chimburuoma Odum
+                &copy; <span id="year"></span> David Chimburuoma Odum
             </p>
         </footer>
     </div>
@@ -575,25 +610,20 @@
             document.getElementById("year").textContent =
                 new Date().getFullYear();
 
-            const reduceMotion = window.matchMedia(
+            const reducedMotion = window.matchMedia(
                 "(prefers-reduced-motion: reduce)"
             ).matches;
+
+            const pointer = { x: 0, y: 0, tx: 0, ty: 0 };
 
             let width = 0;
             let height = 0;
             let dpr = 1;
-            let animationId = null;
-            let lastFrame = 0;
-            let time = 0;
-
-            const pointer = {
-                x: 0,
-                y: 0,
-                targetX: 0,
-                targetY: 0
-            };
-
-            const particles = [];
+            let lastTime = 0;
+            let frameId = null;
+            let particles = [];
+            let rain = [];
+            let elapsed = 0;
 
             function resize() {
                 width = window.innerWidth;
@@ -602,106 +632,43 @@
 
                 canvas.width = Math.round(width * dpr);
                 canvas.height = Math.round(height * dpr);
-
                 ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-                particles.length = 0;
-
                 const count = Math.min(
-                    75,
-                    Math.max(30, Math.floor(width * height / 16000))
+                    95,
+                    Math.max(32, Math.floor(width * height / 12000))
                 );
 
-                for (let i = 0; i < count; i++) {
-                    particles.push({
-                        x: Math.random() * width,
-                        y: Math.random() * height,
-                        size: 0.5 + Math.random() * 1.5,
-                        speed: 0.12 + Math.random() * 0.35,
-                        phase: Math.random() * Math.PI * 2
-                    });
-                }
+                particles = Array.from({ length: count }, () => ({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    vx: (Math.random() - 0.5) * 0.22,
+                    vy: (Math.random() - 0.5) * 0.22,
+                    r: Math.random() * 1.6 + 0.5,
+                    phase: Math.random() * Math.PI * 2
+                }));
+
+                const columns = Math.max(8, Math.floor(width / 38));
+
+                rain = Array.from({ length: columns }, (_, i) => ({
+                    x: i * 38 + Math.random() * 18,
+                    y: Math.random() * height,
+                    speed: 0.25 + Math.random() * 0.65,
+                    length: 3 + Math.floor(Math.random() * 8)
+                }));
             }
 
-            function rotatePoint(point, ax, ay, az) {
-                let { x, y, z } = point;
+            function drawGrid() {
+                const horizon = height * 0.62;
+                const spacing = width < 600 ? 38 : 48;
+                const drift = reducedMotion ? 0 : (elapsed * 0.012) % spacing;
 
-                const cosX = Math.cos(ax);
-                const sinX = Math.sin(ax);
-
-                const y1 = y * cosX - z * sinX;
-                const z1 = y * sinX + z * cosX;
-
-                y = y1;
-                z = z1;
-
-                const cosY = Math.cos(ay);
-                const sinY = Math.sin(ay);
-
-                const x1 = x * cosY + z * sinY;
-                const z2 = -x * sinY + z * cosY;
-
-                x = x1;
-                z = z2;
-
-                const cosZ = Math.cos(az);
-                const sinZ = Math.sin(az);
-
-                const x2 = x * cosZ - y * sinZ;
-                const y2 = x * sinZ + y * cosZ;
-
-                return { x: x2, y: y2, z: z2 };
-            }
-
-            function project(point, centerX, centerY, scale) {
-                const camera = 4.5;
-                const perspective = camera / (camera - point.z);
-
-                return {
-                    x: centerX + point.x * scale * perspective,
-                    y: centerY + point.y * scale * perspective,
-                    z: point.z
-                };
-            }
-
-            function drawLine(a, b, alpha, lineWidth = 1) {
+                ctx.save();
                 ctx.beginPath();
-                ctx.moveTo(a.x, a.y);
-                ctx.lineTo(b.x, b.y);
-                ctx.strokeStyle = `rgba(190, 137, 255, ${alpha})`;
-                ctx.lineWidth = lineWidth;
-                ctx.stroke();
-            }
+                ctx.rect(0, horizon, width, height - horizon);
+                ctx.clip();
 
-            function drawParticles(delta) {
-                for (const particle of particles) {
-                    if (!reduceMotion) {
-                        particle.y -= particle.speed * delta * 0.025;
-
-                        if (particle.y < -5) {
-                            particle.y = height + 5;
-                            particle.x = Math.random() * width;
-                        }
-                    }
-
-                    const pulse =
-                        0.35 + 0.3 * Math.sin(time * 0.001 + particle.phase);
-
+                for (let i = -width; i < width * 2; i += spacing) {
                     ctx.beginPath();
-                    ctx.arc(
-                        particle.x,
-                        particle.y,
-                        particle.size,
-                        0,
-                        Math.PI * 2
-                    );
-
-                    ctx.fillStyle = `rgba(190, 145, 255, ${pulse})`;
-                    ctx.fill();
-                }
-            }
-
-            function drawCube(now) {
-                const mobile = width < 600;
-
-                const centerX = width * (m
+                    ctx.moveTo(width / 2 + (i - width / 2) * 0.10, horizon);
+                    ctx.
