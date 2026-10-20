@@ -1,12 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>David Chimburuoma Odum | Cybersecurity & Technology</title>
+    <title>David Chimburuoma Odum | Cybersecurity Analyst</title>
 
-    <meta name="description" content="Official portfolio of David Chimburuoma Odum, cybersecurity analyst, CEO and technology leader specializing in malware analysis, digital forensics and cybersecurity.">
+    <meta name="description" content="Official portfolio of David Chimburuoma Odum, cybersecurity analyst specializing in malware analysis, digital forensics, security research, and cybersecurity solutions. Discover DCO Cyber Labs, created by DCO CYBER SOLUTIONS.">
 
     <meta name="google-site-verification" content="sWwOeNicUUC96pjH_v7wr7_TMijOzLxPR-y1oJTFDIao">
     <meta name="monetag" content="579dc59c5b5aaf01068fed0f8b6b17f0">
@@ -42,7 +43,6 @@
             line-height: 1.7;
         }
 
-        /* LIVE 3D BACKGROUND */
         #bg3d {
             position: fixed;
             inset: 0;
@@ -72,12 +72,8 @@
         }
 
         @keyframes glowPulse {
-            from {
-                opacity: 0.55;
-            }
-            to {
-                opacity: 1;
-            }
+            from { opacity: 0.55; }
+            to { opacity: 1; }
         }
 
         .site {
@@ -86,6 +82,7 @@
         }
 
         /* HEADER */
+
         header {
             display: flex;
             align-items: center;
@@ -107,7 +104,8 @@
             white-space: nowrap;
         }
 
-        .brand span {
+        .brand span,
+        .footer-brand span {
             color: #bd91ff;
         }
 
@@ -120,6 +118,7 @@
         }
 
         /* HERO */
+
         .hero {
             min-height: 88vh;
             padding: 75px 7% 35px;
@@ -169,7 +168,8 @@
             text-shadow: 0 0 35px rgba(151, 83, 255, 0.28);
         }
 
-        h1 span {
+        h1 span,
+        .platform-card h2 span {
             color: #c49aff;
             background: linear-gradient(
                 90deg,
@@ -201,7 +201,8 @@
             margin-top: 30px;
         }
 
-        .primary-button {
+        .primary-button,
+        .platform-button {
             display: inline-flex;
             min-height: 54px;
             align-items: center;
@@ -218,14 +219,95 @@
             transition: transform 0.25s ease, box-shadow 0.25s ease;
         }
 
-        .primary-button:hover {
+        .primary-button:hover,
+        .platform-button:hover {
             transform: translateY(-4px);
             box-shadow: 0 0 42px rgba(172, 115, 255, 0.60);
         }
 
-        /* SUBTLE HERO BOTTOM LINE */
+        /* DCO CYBER LABS */
+
+        .platform-section {
+            padding: 70px 7%;
+            scroll-margin-top: 30px;
+        }
+
+        .platform-card {
+            position: relative;
+            overflow: hidden;
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 45px 30px;
+            text-align: center;
+            border: 1px solid rgba(169, 112, 255, 0.38);
+            border-radius: 18px;
+            background: linear-gradient(
+                135deg,
+                rgba(124, 60, 255, 0.15),
+                rgba(20, 10, 35, 0.94)
+            );
+            box-shadow: 0 0 40px rgba(124, 60, 255, 0.12);
+        }
+
+        .platform-label {
+            display: inline-block;
+            margin-bottom: 14px;
+            padding: 6px 13px;
+            border: 1px solid rgba(190, 135, 255, 0.35);
+            border-radius: 30px;
+            color: #d4b7ff;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+        }
+
+        .platform-card h2 {
+            margin-bottom: 18px;
+            font-size: clamp(1.9rem, 5vw, 3rem);
+            line-height: 1.2;
+        }
+
+        .platform-description {
+            max-width: 720px;
+            margin: 0 auto 25px;
+            color: var(--muted);
+            font-size: 1rem;
+        }
+
+        .platform-features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 25px 0 30px;
+        }
+
+        .feature {
+            padding: 8px 13px;
+            border: 1px solid rgba(169, 112, 255, 0.24);
+            border-radius: 8px;
+            background: rgba(124, 60, 255, 0.09);
+            color: #dfcbff;
+            font-size: 0.82rem;
+        }
+
+        .platform-button {
+            min-height: 50px;
+            padding: 13px 24px;
+        }
+
+        .platform-credit {
+            margin-top: 22px;
+            color: #b6a5ca;
+            font-size: 0.84rem;
+            letter-spacing: 0.5px;
+        }
+
+        /* HERO BOTTOM LINE */
+
         .bottom-note {
-            width: 100%;
+            width: 86%;
             max-width: 950px;
             margin: 0 auto;
             padding: 18px 0;
@@ -245,16 +327,17 @@
         }
 
         /* FOOTER */
+
         footer {
             padding: 30px 7%;
             text-align: center;
             border-top: 1px solid rgba(190, 140, 255, 0.18);
-            background: rgba(8, 4, 15, 0.78);
+            background: rgba(8, 4, 15, 0.88);
             color: #9386a5;
             font-size: 0.85rem;
         }
 
-        footer .footer-brand {
+        .footer-brand {
             display: inline-block;
             margin-bottom: 10px;
             color: #fff;
@@ -262,19 +345,12 @@
             font-weight: 800;
         }
 
-        footer .footer-brand span {
-            color: #bd91ff;
-        }
-
-        footer .footer-tagline {
+        .footer-tagline {
             margin-bottom: 14px;
         }
 
-        footer .copyright {
-            color: #9386a5;
-        }
-
         /* MOBILE */
+
         @media (max-width: 600px) {
             header {
                 padding: 18px 5%;
@@ -311,13 +387,33 @@
                 letter-spacing: 1.3px;
             }
 
-            .description {
+            .description,
+            .platform-description {
                 font-size: 0.93rem;
             }
 
-            .primary-button {
+            .primary-button,
+            .platform-button {
                 width: 100%;
-                max-width: 280px;
+                max-width: 300px;
+                text-align: center;
+            }
+
+            .platform-section {
+                padding: 45px 5%;
+            }
+
+            .platform-card {
+                padding: 32px 20px;
+            }
+
+            .platform-label {
+                font-size: 0.65rem;
+                letter-spacing: 1px;
+            }
+
+            .feature {
+                font-size: 0.75rem;
             }
 
             .bottom-note {
@@ -350,14 +446,12 @@
 </head>
 
 <body>
-
     <canvas id="bg3d" aria-hidden="true"></canvas>
     <div class="purple-glow" aria-hidden="true"></div>
 
     <div class="site">
-
         <header>
-            <a class="brand" href="#home">
+            <a class="brand" href="#home" aria-label="DCO home">
                 DCO<span>.</span>
             </a>
 
@@ -369,7 +463,6 @@
         <main>
             <section class="hero" id="home">
                 <div class="hero-content">
-
                     <div class="eyebrow">
                         Cybersecurity • Digital Innovation
                     </div>
@@ -397,14 +490,60 @@
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Contact &amp; Explore&nbsp; ↗
+                            Contact &amp; Explore ↗
                         </a>
                     </div>
-
                 </div>
             </section>
 
-            <div class="bottom-note" style="margin: 0 auto; width: 86%;">
+            <section
+                class="platform-section"
+                id="dco-cyber-labs"
+                aria-labelledby="platform-heading"
+            >
+                <div class="platform-card">
+                    <div class="platform-label">
+                        A DCO Cybersecurity Platform
+                    </div>
+
+                    <h2 id="platform-heading">
+                        Introducing <span>DCO Cyber Labs</span>
+                    </h2>
+
+                    <p class="platform-description">
+                        DCO Cyber Labs is an interactive cybersecurity
+                        analyst training simulation created by
+                        DCO CYBER SOLUTIONS. Explore investigation
+                        scenarios, examine security events, practice
+                        threat analysis, and develop practical
+                        cybersecurity skills in a simulated environment.
+                    </p>
+
+                    <div class="platform-features">
+                        <span class="feature">Phishing Investigation</span>
+                        <span class="feature">Digital Forensics</span>
+                        <span class="feature">Security Logs</span>
+                        <span class="feature">Malware Analysis</span>
+                        <span class="feature">Network Security</span>
+                        <span class="feature">Threat Investigation</span>
+                    </div>
+
+                    <a
+                        class="platform-button"
+                        href="https://dco-cyber-labs.vercel.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Explore DCO Cyber Labs ↗
+                    </a>
+
+                    <p class="platform-credit">
+                        Created by DCO CYBER SOLUTIONS
+                    </p>
+                </div>
+            </section>
+
+            <div class="bottom-note">
                 <span>Digital Defence</span>
                 <span class="accent">/// DCO</span>
             </div>
@@ -412,22 +551,29 @@
 
         <footer>
             <div class="footer-brand">DCO<span>.</span></div>
+
             <p class="footer-tagline">
                 Cybersecurity · Investigation · Innovation
             </p>
+
             <p class="copyright">
-                &copy; <span id="year"></span> David Chimburuoma Odum
+                &copy; <span id="year"></span>
+                David Chimburuoma Odum
             </p>
         </footer>
-
     </div>
 
     <script>
         (() => {
+            "use strict";
+
             const canvas = document.getElementById("bg3d");
             const ctx = canvas.getContext("2d", { alpha: true });
 
             if (!ctx) return;
+
+            document.getElementById("year").textContent =
+                new Date().getFullYear();
 
             const reduceMotion = window.matchMedia(
                 "(prefers-reduced-motion: reduce)"
@@ -436,8 +582,9 @@
             let width = 0;
             let height = 0;
             let dpr = 1;
+            let animationId = null;
+            let lastFrame = 0;
             let time = 0;
-            let lastTime = 0;
 
             const pointer = {
                 x: 0,
@@ -461,16 +608,16 @@
                 particles.length = 0;
 
                 const count = Math.min(
-                    90,
-                    Math.max(35, Math.floor(width * height / 14000))
+                    75,
+                    Math.max(30, Math.floor(width * height / 16000))
                 );
 
                 for (let i = 0; i < count; i++) {
                     particles.push({
                         x: Math.random() * width,
                         y: Math.random() * height,
-                        size: 0.5 + Math.random() * 1.6,
-                        speed: 0.15 + Math.random() * 0.5,
+                        size: 0.5 + Math.random() * 1.5,
+                        speed: 0.12 + Math.random() * 0.35,
                         phase: Math.random() * Math.PI * 2
                     });
                 }
@@ -521,173 +668,40 @@
                 ctx.beginPath();
                 ctx.moveTo(a.x, a.y);
                 ctx.lineTo(b.x, b.y);
-
-                ctx.strokeStyle =
-                    `rgba(190, 137, 255, ${alpha})`;
-
+                ctx.strokeStyle = `rgba(190, 137, 255, ${alpha})`;
                 ctx.lineWidth = lineWidth;
                 ctx.stroke();
             }
 
-            function drawGridFace(vertices, divisions, alpha) {
-                for (let i = 1; i < divisions; i++) {
-                    const t = i / divisions;
+            function drawParticles(delta) {
+                for (const particle of particles) {
+                    if (!reduceMotion) {
+                        particle.y -= particle.speed * delta * 0.025;
 
-                    const top = {
-                        x: vertices[0].x * (1 - t) + vertices[1].x * t,
-                        y: vertices[0].y * (1 - t) + vertices[1].y * t,
-                        z: vertices[0].z * (1 - t) + vertices[1].z * t
-                    };
+                        if (particle.y < -5) {
+                            particle.y = height + 5;
+                            particle.x = Math.random() * width;
+                        }
+                    }
 
-                    const bottom = {
-                        x: vertices[3].x * (1 - t) + vertices[2].x * t,
-                        y: vertices[3].y * (1 - t) + vertices[2].y * t,
-                        z: vertices[3].z * (1 - t) + vertices[2].z * t
-                    };
+                    const pulse =
+                        0.35 + 0.3 * Math.sin(time * 0.001 + particle.phase);
 
-                    drawLine(
-                        project(top, faceCenterX, faceCenterY, faceScale),
-                        project(bottom, faceCenterX, faceCenterY, faceScale),
-                        alpha
-                    );
-
-                    const left = {
-                        x: vertices[0].x * (1 - t) + vertices[3].x * t,
-                        y: vertices[0].y * (1 - t) + vertices[3].y * t,
-                        z: vertices[0].z * (1 - t) + vertices[3].z * t
-                    };
-
-                    const right = {
-                        x: vertices[1].x * (1 - t) + vertices[2].x * t,
-                        y: vertices[1].y * (1 - t) + vertices[2].y * t,
-                        z: vertices[1].z * (1 - t) + vertices[2].z * t
-                    };
-
-                    drawLine(
-                        project(left, faceCenterX, faceCenterY, faceScale),
-                        project(right, faceCenterX, faceCenterY, faceScale),
-                        alpha
-                    );
-                }
-            }
-
-            let faceCenterX = 0;
-            let faceCenterY = 0;
-            let faceScale = 1;
-
-            function drawGeometry(now) {
-                const mobile = width < 600;
-
-                faceCenterX = width * (mobile ? 0.5 : 0.70);
-                faceCenterY = height * (mobile ? 0.68 : 0.58);
-
-                faceScale = Math.min(
-                    width * (mobile ? 0.29 : 0.19),
-                    height * (mobile ? 0.19 : 0.22),
-                    mobile ? 155 : 220
-                );
-
-                const movement = reduceMotion ? 0 : now * 0.0003;
-
-                const ax =
-                    0.45 + Math.sin(movement * 0.7) * 0.25 +
-                    pointer.y * 0.25;
-
-                const ay =
-                    movement + pointer.x * 0.35;
-
-                const az =
-                    Math.sin(movement * 0.5) * 0.16;
-
-                const s = 1;
-
-                const cube = [
-                    { x: -s, y: -s, z: -s },
-                    { x:  s, y: -s, z: -s },
-                    { x:  s, y:  s, z: -s },
-                    { x: -s, y:  s, z: -s },
-                    { x: -s, y: -s, z:  s },
-                    { x:  s, y: -s, z:  s },
-                    { x:  s, y:  s, z:  s },
-                    { x: -s, y:  s, z:  s }
-                ];
-
-                const edges = [
-                    [0,1], [1,2], [2,3], [3,0],
-                    [4,5], [5,6], [6,7], [7,4],
-                    [0,4], [1,5], [2,6], [3,7]
-                ];
-
-                const rotated = cube.map(point =>
-                    rotatePoint(point, ax, ay, az)
-                );
-
-                const projected = rotated.map(point =>
-                    project(point, faceCenterX, faceCenterY, faceScale)
-                );
-
-                /* Large, soft purple aura */
-                const aura = ctx.createRadialGradient(
-                    faceCenterX, faceCenterY, 4,
-                    faceCenterX, faceCenterY, faceScale * 2.5
-                );
-
-                aura.addColorStop(0, "rgba(121, 43, 255, 0.16)");
-                aura.addColorStop(0.55, "rgba(100, 31, 230, 0.07)");
-                aura.addColorStop(1, "rgba(100, 31, 230, 0)");
-
-                ctx.fillStyle = aura;
-                ctx.fillRect(
-                    faceCenterX - faceScale * 2.5,
-                    faceCenterY - faceScale * 2.5,
-                    faceScale * 5,
-                    faceScale * 5
-                );
-
-                /* Orbiting rings */
-                ctx.save();
-                ctx.translate(faceCenterX, faceCenterY);
-                ctx.rotate(-0.2 + Math.sin(movement) * 0.08);
-
-                for (let i = 0; i < 3; i++) {
                     ctx.beginPath();
-
-                    ctx.ellipse(
-                        0,
-                        0,
-                        faceScale * (1.42 + i * 0.12),
-                        faceScale * (0.72 + i * 0.09),
-                        i * 0.35,
+                    ctx.arc(
+                        particle.x,
+                        particle.y,
+                        particle.size,
                         0,
                         Math.PI * 2
                     );
 
-                    ctx.strokeStyle =
-                        `rgba(171, 111, 255, ${0.20 - i * 0.045})`;
-
-                    ctx.lineWidth = 1;
-                    ctx.stroke();
+                    ctx.fillStyle = `rgba(190, 145, 255, ${pulse})`;
+                    ctx.fill();
                 }
+            }
 
-                ctx.restore();
+            function drawCube(now) {
+                const mobile = width < 600;
 
-                /* Main rotating cube */
-                ctx.save();
-                ctx.shadowBlur = 14;
-                ctx.shadowColor = "rgba(160, 85, 255, 0.8)";
-
-                for (const edge of edges) {
-                    drawLine(
-                        projected[edge[0]],
-                        projected[edge[1]],
-                        0.85,
-                        1.35
-                    );
-                }
-
-                ctx.restore();
-
-                /* Intersecting transparent wireframe planes */
-                const planes = [
-                    [
-  
+                const centerX = width * (m
