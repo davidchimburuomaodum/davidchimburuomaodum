@@ -1,14 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">.                            
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>David Chimburuoma Odum | Cybersecurity Analyst</title>
-    <meta name="description" content="Official portfolio of David Chimburuoma Odum, cybersecurity analyst specializing in malware analysis, digital forensics, security research, and cybersecurity solutions. Discover DCO Cyber Labs, created by DCO CYBER SOLUTIONS.">
-    <meta name="google-site-verification" content="sWwOeNicUUC96pjhV7wr7_TMijOzLxPR-y1oJTFDIao" />
-    <meta name="monetag" content="579dc59c5b5aaf01068fed0f8b6b17f0">
+
+    <meta name="description" content="Official portfolio of David Chimburuoma Odum, cybersecurity analyst specializing in malware analysis, digital forensics, security research and cybersecurity solutions.">
+
     <meta name="theme-color" content="#08040f">
+
     <link rel="canonical" href="https://davidchimburuomaodum.github.io/">
 
     <style>
@@ -39,8 +41,6 @@
             line-height: 1.7;
         }
 
-        /* LIVE CYBERSECURITY BACKGROUND */
-
         #bg3d {
             position: fixed;
             inset: 0;
@@ -56,9 +56,9 @@
             z-index: 0;
             pointer-events: none;
             background:
-                radial-gradient(ellipse at 15% 25%, rgba(83, 40, 220, .20), transparent 40%),
-                radial-gradient(ellipse at 85% 45%, rgba(0, 175, 255, .11), transparent 38%),
-                radial-gradient(ellipse at 50% 100%, rgba(116, 38, 255, .15), transparent 50%);
+                radial-gradient(ellipse at 15% 25%, rgba(83,40,220,.20), transparent 40%),
+                radial-gradient(ellipse at 85% 45%, rgba(0,175,255,.11), transparent 38%),
+                radial-gradient(ellipse at 50% 100%, rgba(116,38,255,.15), transparent 50%);
             animation: atmosphere 9s ease-in-out infinite alternate;
         }
 
@@ -72,19 +72,13 @@
                 to bottom,
                 transparent 0,
                 transparent 3px,
-                rgba(120, 150, 255, .08) 4px
+                rgba(120,150,255,.08) 4px
             );
         }
 
         @keyframes atmosphere {
-            0% {
-                opacity: .55;
-                transform: scale(1);
-            }
-            100% {
-                opacity: 1;
-                transform: scale(1.06);
-            }
+            from { opacity: .55; transform: scale(1); }
+            to { opacity: 1; transform: scale(1.06); }
         }
 
         .site {
@@ -98,10 +92,9 @@
             justify-content: space-between;
             gap: 15px;
             padding: 22px 7%;
-            border-bottom: 1px solid rgba(169, 112, 255, .23);
-            background: rgba(6, 7, 17, .66);
+            border-bottom: 1px solid rgba(169,112,255,.23);
+            background: rgba(6,7,17,.66);
             backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
         }
 
         .brand {
@@ -115,7 +108,7 @@
         .brand span,
         .footer-brand span {
             color: #bd91ff;
-            text-shadow: 0 0 16px rgba(169, 112, 255, .9);
+            text-shadow: 0 0 16px rgba(169,112,255,.9);
         }
 
         .status {
@@ -172,11 +165,11 @@
             display: inline-block;
             margin-bottom: 24px;
             padding: 8px 16px;
-            border: 1px solid rgba(157, 120, 255, .55);
+            border: 1px solid rgba(157,120,255,.55);
             border-radius: 30px;
             color: #d4b7ff;
-            background: rgba(81, 42, 155, .20);
-            box-shadow: 0 0 25px rgba(115, 60, 255, .12);
+            background: rgba(81,42,155,.20);
+            box-shadow: 0 0 25px rgba(115,60,255,.12);
             font-size: .72rem;
             font-weight: bold;
             letter-spacing: 2px;
@@ -185,16 +178,18 @@
 
         h1 {
             margin-bottom: 22px;
-            font-size: clamp(2.5rem, 7vw, 5.4rem);
+            font-size: clamp(2.5rem,7vw,5.4rem);
             line-height: 1.12;
             letter-spacing: -2px;
-            text-shadow: 0 0 35px rgba(151, 83, 255, .35);
+            text-shadow: 0 0 35px rgba(151,83,255,.35);
         }
 
         h1 span,
         .platform-card h2 span {
             color: #c49aff;
-            background: linear-gradient(90deg, #8d6aff, #f1d9ff, #51dcff, #a36bff);
+            background: linear-gradient(
+                90deg,#8d6aff,#f1d9ff,#51dcff,#a36bff
+            );
             background-size: 300% auto;
             -webkit-background-clip: text;
             background-clip: text;
@@ -209,7 +204,7 @@
         .subtitle {
             margin-bottom: 16px;
             color: #e0d3f3;
-            font-size: clamp(1rem, 2.5vw, 1.35rem);
+            font-size: clamp(1rem,2.5vw,1.35rem);
         }
 
         .description {
@@ -232,21 +227,21 @@
             align-items: center;
             justify-content: center;
             padding: 14px 30px;
-            border: 1px solid rgba(230, 210, 255, .65);
+            border: 1px solid rgba(230,210,255,.65);
             border-radius: 9px;
-            background: linear-gradient(110deg, #9561ff, #d0aaff);
+            background: linear-gradient(110deg,#9561ff,#d0aaff);
             color: #160829;
             text-decoration: none;
             font-size: 1rem;
             font-weight: 800;
-            box-shadow: 0 0 25px rgba(144, 75, 255, .27);
+            box-shadow: 0 0 25px rgba(144,75,255,.27);
             transition: transform .25s ease, box-shadow .25s ease;
         }
 
         .primary-button:hover,
         .platform-button:hover {
             transform: translateY(-4px);
-            box-shadow: 0 0 38px rgba(172, 115, 255, .65);
+            box-shadow: 0 0 38px rgba(172,115,255,.65);
         }
 
         .platform-section {
@@ -261,18 +256,17 @@
             margin: 0 auto;
             padding: 45px 30px;
             text-align: center;
-            border: 1px solid rgba(125, 112, 255, .40);
+            border: 1px solid rgba(125,112,255,.40);
             border-radius: 18px;
             background: linear-gradient(
                 135deg,
-                rgba(50, 24, 100, .58),
-                rgba(8, 11, 29, .88)
+                rgba(50,24,100,.58),
+                rgba(8,11,29,.88)
             );
             box-shadow:
-                0 0 40px rgba(124, 60, 255, .13),
-                inset 0 0 35px rgba(77, 85, 255, .04);
+                0 0 40px rgba(124,60,255,.13),
+                inset 0 0 35px rgba(77,85,255,.04);
             backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
         }
 
         .platform-card::before {
@@ -282,20 +276,22 @@
             left: -100%;
             width: 70%;
             height: 1px;
-            background: linear-gradient(90deg, transparent, #72e5ff, #c49aff, transparent);
+            background: linear-gradient(
+                90deg,transparent,#72e5ff,#c49aff,transparent
+            );
             animation: cardScan 6s ease-in-out infinite;
         }
 
         @keyframes cardScan {
-            0%, 15% { left: -100%; }
-            75%, 100% { left: 130%; }
+            0%,15% { left: -100%; }
+            75%,100% { left: 130%; }
         }
 
         .platform-label {
             display: inline-block;
             margin-bottom: 14px;
             padding: 6px 13px;
-            border: 1px solid rgba(190, 135, 255, .35);
+            border: 1px solid rgba(190,135,255,.35);
             border-radius: 30px;
             color: #d4b7ff;
             font-size: .72rem;
@@ -306,7 +302,7 @@
 
         .platform-card h2 {
             margin-bottom: 18px;
-            font-size: clamp(1.9rem, 5vw, 3rem);
+            font-size: clamp(1.9rem,5vw,3rem);
             line-height: 1.2;
         }
 
@@ -327,17 +323,17 @@
 
         .feature {
             padding: 8px 13px;
-            border: 1px solid rgba(125, 150, 255, .25);
+            border: 1px solid rgba(125,150,255,.25);
             border-radius: 8px;
-            background: rgba(124, 60, 255, .10);
+            background: rgba(124,60,255,.10);
             color: #dfd7ff;
             font-size: .82rem;
             transition: border-color .25s ease, background .25s ease;
         }
 
         .feature:hover {
-            border-color: rgba(82, 220, 255, .7);
-            background: rgba(55, 130, 255, .15);
+            border-color: rgba(82,220,255,.7);
+            background: rgba(55,130,255,.15);
         }
 
         .platform-button {
@@ -361,7 +357,7 @@
             align-items: center;
             justify-content: space-between;
             gap: 15px;
-            border-top: 1px solid rgba(193, 151, 255, .20);
+            border-top: 1px solid rgba(193,151,255,.20);
             color: #a99abb;
             font-size: .7rem;
             letter-spacing: 2px;
@@ -375,8 +371,8 @@
         footer {
             padding: 30px 7%;
             text-align: center;
-            border-top: 1px solid rgba(190, 140, 255, .18);
-            background: rgba(6, 7, 17, .86);
+            border-top: 1px solid rgba(190,140,255,.18);
+            background: rgba(6,7,17,.86);
             color: #9386a5;
             font-size: .85rem;
         }
@@ -394,9 +390,7 @@
         }
 
         @media (max-width: 600px) {
-            header {
-                padding: 18px 5%;
-            }
+            header { padding: 18px 5%; }
 
             .brand {
                 font-size: .9rem;
@@ -412,11 +406,10 @@
             .hero {
                 min-height: 84vh;
                 padding: 65px 6% 30px;
-                align-items: center;
             }
 
             h1 {
-                font-size: clamp(2.3rem, 10vw, 3.6rem);
+                font-size: clamp(2.3rem,10vw,3.6rem);
                 letter-spacing: -1px;
             }
 
@@ -437,31 +430,23 @@
                 text-align: center;
             }
 
-            .platform-section {
-                padding: 45px 5%;
-            }
+            .platform-section { padding: 45px 5%; }
 
-            .platform-card {
-                padding: 32px 20px;
-            }
+            .platform-card { padding: 32px 20px; }
 
             .platform-label {
                 font-size: .63rem;
                 letter-spacing: 1px;
             }
 
-            .feature {
-                font-size: .75rem;
-            }
+            .feature { font-size: .75rem; }
 
             .bottom-note {
                 font-size: .58rem;
                 letter-spacing: 1px;
             }
 
-            footer {
-                padding: 25px 5%;
-            }
+            footer { padding: 25px 5%; }
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -486,21 +471,28 @@
 </head>
 
 <body>
+
     <canvas id="bg3d" aria-hidden="true"></canvas>
     <div class="purple-glow" aria-hidden="true"></div>
     <div class="scan-overlay" aria-hidden="true"></div>
 
     <div class="site">
+
         <header>
             <a class="brand" href="#home" aria-label="DCO home">
                 DCO<span>.</span>
             </a>
-            <div class="status">Cybersecurity &amp; Technology</div>
+
+            <div class="status">
+                Cybersecurity &amp; Technology
+            </div>
         </header>
 
         <main>
+
             <section class="hero" id="home">
                 <div class="hero-content">
+
                     <div class="eyebrow">
                         Cybersecurity • Digital Innovation
                     </div>
@@ -524,78 +516,85 @@
                     <div class="actions">
                         <a
                             class="primary-button"
-                            href="https://david-portfolio-swart-five.vercel.app"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            href="mailto:dcocybersolutions@gmail.com"
                         >
-                            Contact &amp; Explore ↗
+                            Contact Me ↗
                         </a>
                     </div>
+
                 </div>
             </section>
 
             <section
                 class="platform-section"
-                id="dco-cyber-labs"
+                id="purchase-access"
                 aria-labelledby="platform-heading"
             >
+
                 <div class="platform-card">
+
                     <div class="platform-label">
-                        A DCO Cybersecurity Platform
+                        DCO CYBER SOLUTIONS
                     </div>
 
                     <h2 id="platform-heading">
-                        Introducing <span>DCO Cyber Labs</span>
+                        Get <span>Platform Access</span>
                     </h2>
 
                     <p class="platform-description">
-                        DCO Cyber Labs is an interactive cybersecurity
-                        analyst training simulation created by
-                        DCO CYBER SOLUTIONS. Explore investigation
-                        scenarios, examine security events, practice
-                        threat analysis, and develop practical
-                        cybersecurity skills in a simulated environment.
+                        Access our digital platform by completing
+                        your purchase through our checkout page.
+                        Secure your access and explore the platform.
                     </p>
 
                     <div class="platform-features">
-                        <span class="feature">Phishing Investigation</span>
-                        <span class="feature">Digital Forensics</span>
-                        <span class="feature">Security Logs</span>
-                        <span class="feature">Malware Analysis</span>
-                        <span class="feature">Network Security</span>
-                        <span class="feature">Threat Investigation</span>
+                        <span class="feature">Digital Platform</span>
+                        <span class="feature">Online Access</span>
+                        <span class="feature">Cybersecurity</span>
+                        <span class="feature">Digital Innovation</span>
                     </div>
 
                     <a
                         class="platform-button"
-                        href="https://dco-cyber-labs.vercel.app"
+                        href="https://wavesel.com/p/kky38e"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        Explore DCO Cyber Labs ↗
+                        Purchase Access ↗
                     </a>
 
                     <p class="platform-credit">
-                        Created by DCO CYBER SOLUTIONS
+                        Secure checkout powered by Wavesel
                     </p>
+
                 </div>
+
             </section>
 
             <div class="bottom-note">
                 <span>Digital Defence</span>
                 <span class="accent">/// DCO</span>
             </div>
+
         </main>
 
         <footer>
-            <div class="footer-brand">DCO<span>.</span></div>
+
+            <div class="footer-brand">
+                DCO<span>.</span>
+            </div>
+
             <p class="footer-tagline">
                 Cybersecurity · Investigation · Innovation
             </p>
+
             <p class="copyright">
-                &copy; <span id="year"></span> David Chimburuoma Odum
+                &copy; <span id="year"></span>
+                David Chimburuoma Odum
             </p>
+
         </footer>
+
     </div>
 
     <script>
@@ -614,24 +613,21 @@
                 "(prefers-reduced-motion: reduce)"
             ).matches;
 
-            const pointer = { x: 0, y: 0, tx: 0, ty: 0 };
-
             let width = 0;
             let height = 0;
             let dpr = 1;
-            let lastTime = 0;
-            let frameId = null;
             let particles = [];
-            let rain = [];
-            let elapsed = 0;
+            let animationId = null;
 
             function resize() {
                 width = window.innerWidth;
                 height = window.innerHeight;
+
                 dpr = Math.min(window.devicePixelRatio || 1, 1.5);
 
                 canvas.width = Math.round(width * dpr);
                 canvas.height = Math.round(height * dpr);
+
                 ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
                 const count = Math.min(
@@ -644,31 +640,76 @@
                     y: Math.random() * height,
                     vx: (Math.random() - 0.5) * 0.22,
                     vy: (Math.random() - 0.5) * 0.22,
-                    r: Math.random() * 1.6 + 0.5,
-                    phase: Math.random() * Math.PI * 2
+                    r: Math.random() * 1.6 + 0.5
                 }));
 
-                const columns = Math.max(8, Math.floor(width / 38));
-
-                rain = Array.from({ length: columns }, (_, i) => ({
-                    x: i * 38 + Math.random() * 18,
-                    y: Math.random() * height,
-                    speed: 0.25 + Math.random() * 0.65,
-                    length: 3 + Math.floor(Math.random() * 8)
-                }));
+                if (reducedMotion) draw();
             }
 
-            function drawGrid() {
-                const horizon = height * 0.62;
-                const spacing = width < 600 ? 38 : 48;
-                const drift = reducedMotion ? 0 : (elapsed * 0.012) % spacing;
+            function draw() {
+                ctx.clearRect(0, 0, width, height);
 
-                ctx.save();
-                ctx.beginPath();
-                ctx.rect(0, horizon, width, height - horizon);
-                ctx.clip();
+                particles.forEach(p => {
+                    if (!reducedMotion) {
+                        p.x += p.vx;
+                        p.y += p.vy;
 
-                for (let i = -width; i < width * 2; i += spacing) {
+                        if (p.x < 0 || p.x > width) p.vx *= -1;
+                        if (p.y < 0 || p.y > height) p.vy *= -1;
+                    }
+
                     ctx.beginPath();
-                    ctx.moveTo(width / 2 + (i - width / 2) * 0.10, horizon);
-                    ctx.
+                    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                    ctx.fillStyle = "rgba(174,130,255,0.7)";
+                    ctx.fill();
+                });
+
+                for (let i = 0; i < particles.length; i++) {
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const a = particles[i];
+                        const b = particles[j];
+
+                        const dx = a.x - b.x;
+                        const dy = a.y - b.y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+
+                        if (distance < 115) {
+                            ctx.beginPath();
+                            ctx.moveTo(a.x, a.y);
+                            ctx.lineTo(b.x, b.y);
+
+                            ctx.strokeStyle =
+                                `rgba(116,150,255,${0.16 * (1 - distance / 115)})`;
+
+                            ctx.lineWidth = 0.7;
+                            ctx.stroke();
+                        }
+                    }
+                }
+
+                if (!reducedMotion) {
+                    animationId = requestAnimationFrame(draw);
+                }
+            }
+
+            window.addEventListener("resize", resize);
+
+            resize();
+
+            if (!reducedMotion) {
+                draw();
+            }
+
+            document.addEventListener("visibilitychange", () => {
+                if (document.hidden) {
+                    cancelAnimationFrame(animationId);
+                } else if (!reducedMotion) {
+                    draw();
+                }
+            });
+
+        })();
+    </script>
+
+</body>
+</html>
